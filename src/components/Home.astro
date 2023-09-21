@@ -1,0 +1,18 @@
+---
+import Typewriter from './Typewriter.tsx';
+import About from './About.astro';
+---
+
+<div
+  class='sm:h-screen lg:min-h-[632px] sm:min-h-[500px] min-h-[500px] h-[95vh] py-0 flex flex-col items-center justify-center text-center gap-16 sm:gap-8'
+>
+  <h1 class='text-3xl text-gray-400'>Carolina Palacios</h1>
+  <p
+    class='lg:leading-[1.25] sm:leading-[1.25] leading-[1.25] sm:text-6xl text-6xl font-extrabold lg:w-[50%] w-[90%]'
+  >
+    Developer with a deep passion for <Typewriter client:only='react' />
+  </p>
+  <div id='about'>
+    <About />
+  </div>
+</div>

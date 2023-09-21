@@ -1,0 +1,30 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Projects from '../components/Projects/Projects.astro';
+import Experience from '../components/Experience.astro';
+import Contact from '../components/Contact.astro';
+import About from '../components/About.astro';
+import Footer from '../components/Footer.astro';
+import Home from '../components/Home.astro';
+---
+
+<Layout title='Portfolio'>
+  <Header />
+  <main class='mt-14'>
+    <div>
+      <Home />
+    </div>
+
+    <div id='projects'>
+      <Projects />
+    </div>
+    <div id='experience'>
+      <Experience />
+    </div>
+    <div id='contact'>
+      <Contact />
+    </div>
+  </main>
+  <Footer />
+</Layout>

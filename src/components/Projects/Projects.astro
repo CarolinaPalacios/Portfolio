@@ -1,0 +1,41 @@
+---
+import CardProject from './CardProject.astro';
+import { projects } from '../../utils/utils.ts';
+---
+
+<section
+  class='flex flex-col items-center justify-center flex-wrap sm:h-screen lg:h-[632px] sm:min-h-[500px] h-[500px]'
+>
+  <div class='w-1/2 flex flex-col items-center justify-center gap-8'>
+    <h1 class='font-extrabold text-6xl py-4'>Proyects</h1>
+    <div class='grid gap-8'>
+      {
+        projects.map(
+          ({
+            id,
+            title,
+            subtitle,
+            image,
+            video,
+            github,
+            url,
+            technologies,
+            description,
+          }) => (
+            <CardProject
+              id={id}
+              title={title}
+              subtitle={subtitle}
+              image={image}
+              video={video}
+              github={github}
+              url={url}
+              technologies={technologies}
+              description={description}
+            />
+          ),
+        )
+      }
+    </div>
+  </div>
+</section>
