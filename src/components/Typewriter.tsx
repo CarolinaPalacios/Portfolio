@@ -1,22 +1,17 @@
-import TypeWriter from "typewriter-effect";
+import TypeWriter from 'typewriter-effect';
 
 const Typewriter = () => {
   return (
-    <div className="text-blue-500">
-
+    <div className='dark:text-blue-500 text-[#748c74]'>
       <TypeWriter
         options={{
-          strings: [
-            "creativity",
-            "innovation",
-            "technology",
-          ],
+          strings: ['creativity', 'innovation', 'technology'],
           autoStart: true,
           loop: true,
         }}
       />
     </div>
   );
-}
+};
 
-export default Typewriter
+export default Typewriter;
