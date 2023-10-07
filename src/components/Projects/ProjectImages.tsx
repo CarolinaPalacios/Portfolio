@@ -69,11 +69,11 @@ const ProjectImages = ({
           </div>
           <div className='w-1/3 pb-2 mr-10 mt-7'>
             <h1 className='text-4xl font-extrabold'>{title}</h1>
-            <div className='dark:hover:bg-[#FFFFFF11] dark:hover:text-[#F3F3F3] bg-transparent p-[5px] text-[#535353] hover:text-[#252525] hover:bg-[#cccccc38] h-10 absolute top-8 right-5 lg:p-2 rounded-md'>
+            <div className='dark:hover:bg-[#FFFFFF11] dark:text-[#a8a8a8] dark:hover:text-[#F3F3F3] bg-transparent p-[5px] text-[#535353] hover:text-[#252525] hover:bg-[#cccccc38] h-10 absolute top-8 right-5 lg:p-2 rounded-md'>
               <button onClick={handleCloseModal}>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
-                  class='icon icon-tabler icon-tabler-x'
+                  className='icon icon-tabler icon-tabler-x'
                   width='24'
                   height='24'
                   viewBox='0 0 24 24'
@@ -93,7 +93,7 @@ const ProjectImages = ({
               <a
                 href={github}
                 target='_blank'
-                className='flex items-center justify-center p-3 pr-4 gap-1 sm:gap-2 font-semibold text-sm text-[#0a0a0a] dark:text-[#CCCCCC] bg-[#0e0e0e11] dark:bg-[#FFFFFF11] dark:hover:text-[#0a0a0a] dark:hover:bg-white hover:bg-[#111111] hover:text-white rounded-lg transition-colors'
+                className='flex items-center justify-center p-3 pr-4 gap-1 sm:gap-2 font-semibold text-sm text-[#0a0a0a] dark:text-[#e2e2e2] bg-[#0e0e0e11] dark:bg-[#FFFFFF11] dark:hover:text-[#0a0a0a] dark:hover:bg-white hover:bg-[#111111] hover:text-white rounded-lg transition-colors'
               >
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -115,7 +115,7 @@ const ProjectImages = ({
               <a
                 href={url}
                 target='_blank'
-                className='flex items-center justify-center p-3 pr-4 font-semibold text-sm text-[#0a0a0a] dark:text-[#CCCCCC] bg-[#0e0e0e11] dark:bg-[#FFFFFF11] dark:hover:text-[#0a0a0a] dark:hover:bg-white hover:bg-[#111111] hover:text-white rounded-lg transition-colors'
+                className='flex items-center justify-center p-3 pr-4 font-semibold text-sm text-[#0a0a0a] dark:text-[#e2e2e2] bg-[#0e0e0e11] dark:bg-[#FFFFFF11] dark:hover:text-[#0a0a0a] dark:hover:bg-white hover:bg-[#111111] hover:text-white rounded-lg transition-colors'
               >
                 <svg
                   xmlns='http://www.w3.org/2000/svg'

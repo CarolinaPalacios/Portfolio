@@ -1,25 +1,13 @@
-export interface Projects {
-  id: number;
-  title: string;
-  subtitle: string;
-  image: Image;
-  video?: string;
-  github: string;
-  url: string;
-  description: string;
-  technologies: Technologies[];
-}
+import type {
+  Projects,
+  Technologies,
+  Contact,
+  Experience,
+  About,
+  Image,
+} from '../utils/utils.d';
 
-export interface Image {
-  cover: string;
-  secondImage: string;
-  thirdImage: string;
-}
-
-export type Technologies = {
-  name: string;
-  svg: string;
-};
+export type { Projects, Technologies, Contact, Experience, About, Image };
 
 export const projects: Projects[] = [
   {
@@ -169,6 +157,126 @@ export const projects: Projects[] = [
       {
         name: 'Sequelize',
         svg: 'https://www.svgrepo.com/show/374071/sequelize.svg',
+      },
+    ],
+  },
+];
+
+export const contacts: Contact[] = [
+  {
+    name: 'caaro.palacios@hotmail.com',
+    svg: 'https://www.svgrepo.com/show/373951/outlook.svg',
+    text: 'Send me an email',
+    link: 'mailto:caaro.palacios@hotmail.com',
+  },
+  {
+    name: '/CarolinaPalacios',
+    svg: 'https://www.svgrepo.com/show/450156/github.svg',
+    text: 'GitHub Profile',
+    link: 'https://github.com/CarolinaPalacios',
+  },
+  {
+    name: '/in/CarolinaPalacios1',
+    svg: 'https://www.svgrepo.com/show/448234/linkedin.svg',
+    text: 'LinkedIn Profile',
+    link: 'https://www.linkedin.com/in/CarolinaPalacios1',
+  },
+];
+
+export const experience: Experience[] = [
+  {
+    title: 'Bookbuster web application',
+    company: 'Bookbuster',
+    timeframe: 'July 2023 - August 2023',
+    image: {
+      cover: '',
+    },
+    description:
+      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur asperiores, libero nam in iusto possimus soluta praesentium vero consequuntur! Eos voluptates debitis eum quos saepe quod corporis fugiat minima? Dicta? Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, harum dolorum quidem rem commodi repellendus tenetur laboriosam ratione ipsam? Ullam, error expedita. Error eveniet soluta molestiae doloremque facilis, illum voluptas? Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ut mollitia aspernatur eligendi blanditiis deserunt et, recusandae at nostrum nulla expedita animi iste officiis quis amet ipsam cumque minus beatae? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem assumenda id dignissimos, error nostrum atque soluta nemo maxime expedita qui vitae architecto at corporis hic magni ipsa explicabo officia totam!',
+    about: [
+      {
+        about1: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+        about2: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+        about3: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+        about4: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+      },
+    ],
+    technologies: [
+      {
+        name: 'React',
+        svg: 'https://www.svgrepo.com/show/452092/react.svg',
+      },
+      {
+        name: 'Redux',
+        svg: 'https://www.svgrepo.com/show/452093/redux.svg',
+      },
+      {
+        name: 'Node.js',
+        svg: 'https://www.svgrepo.com/show/452075/node-js.svg',
+      },
+      {
+        name: 'Express',
+        svg: 'https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg',
+      },
+      {
+        name: 'PostgreSQL',
+        svg: 'https://www.svgrepo.com/show/354200/postgresql.svg',
+      },
+      {
+        name: 'Sequelize',
+        svg: 'https://www.svgrepo.com/show/374071/sequelize.svg',
+      },
+      {
+        name: 'Javascript',
+        svg: 'https://www.svgrepo.com/show/349419/javascript.svg',
+      },
+      {
+        name: 'Typescript',
+        svg: 'https://www.svgrepo.com/show/349540/typescript.svg',
+      },
+      {
+        name: 'Tailwind',
+        svg: 'https://www.svgrepo.com/show/374118/tailwind.svg',
+      },
+      {
+        name: 'HTML',
+        svg: 'https://www.svgrepo.com/show/452228/html-5.svg',
+      },
+      {
+        name: 'CSS',
+        svg: 'https://www.svgrepo.com/show/452185/css-3.svg',
+      },
+      {
+        name: 'GitHub',
+        svg: 'https://www.svgrepo.com/show/35001/github.svg',
+      },
+      {
+        name: 'Git',
+        svg: 'https://www.svgrepo.com/show/452210/git.svg',
+      },
+      {
+        name: 'Vercel',
+        svg: 'https://assets.vercel.com/image/upload/front/favicon/vercel/57x57.png',
+      },
+      {
+        name: 'pnpm',
+        svg: 'https://www.svgrepo.com/show/373778/light-pnpm.svg',
+      },
+      {
+        name: 'npm',
+        svg: 'https://www.svgrepo.com/show/354128/npm.svg',
+      },
+      {
+        name: 'Playwright',
+        svg: '../../assets/playwright.svg',
+      },
+      {
+        name: 'Jest',
+        svg: 'https://www.svgrepo.com/show/353930/jest.svg',
+      },
+      {
+        name: 'Vite',
+        svg: 'https://www.svgrepo.com/show/374167/vite.svg',
       },
     ],
   },

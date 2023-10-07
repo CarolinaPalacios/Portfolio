@@ -1,15 +1,15 @@
 ---
-import CardProject from './CardProject.astro';
+import ProjectCard from './ProjectCard.astro';
 import { projects } from '../../utils/utils.ts';
 ---
 
 <section
-  class='flex flex-col w-[90%] sm:w-full gap-12 py-16'
+  class='flex flex-col w-[100%] sm:w-full gap-12 py-10'
 >
-  <div class='w-1/2 flex flex-col items-center justify-center gap-8'>
-    <h1 class='flex flex-initial font-extrabold text-6xl mr-16'>Projects</h1>
+  <div class='w-1/2 flex flex-col gap-8'>
+    <h1 class='flex  font-extrabold text-6xl'>Projects</h1>
   </div>
-    <div class='grid gap-y-8 lg:grid-cols-2 place-items-center px-20'>
+    <div class='grid gap-y-8 lg:grid-cols-2 place-items-center '>
       {
         projects.map(
           ({
@@ -23,7 +23,7 @@ import { projects } from '../../utils/utils.ts';
             technologies,
             description,
           }) => (
-            <CardProject
+            <ProjectCard
               id={id}
               title={title}
               subtitle={subtitle}
