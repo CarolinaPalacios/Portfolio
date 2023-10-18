@@ -1,7 +1,7 @@
 import { useState, type MouseEventHandler } from 'react';
 import Slider from 'react-slick';
-import SlArrowRight from 'react-icons/sl';
-import SlArrowLeft from 'react-icons/sl';
+import pkg from 'react-icons/sl/index.esm.js';
+const { SlArrowRight, SlArrowLeft } = pkg;
 
 import type { Image } from '../utils/utils';
 
