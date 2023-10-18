@@ -1,21 +1,24 @@
 import { useRef } from 'react';
+import ImageCarousel from '../ImageCarousel';
 import type { Image, Technologies } from '../../utils/utils.ts';
 
 interface Props {
-  image: Image;
+  images: Image;
   title: string;
+  video?: string;
   github: string;
   url: string;
   technologies: Technologies[];
   description: string;
 }
 const ProjectImages = ({
-  image,
+  images,
   title,
   github,
   url,
   technologies,
   description,
+  video,
 }: Props) => {
   const dialogRef: React.MutableRefObject<HTMLDialogElement | null> =
     useRef(null);
@@ -35,9 +38,9 @@ const ProjectImages = ({
   return (
     <div>
       <div className='flex flex-col items-center justify-center w-fit overflow-hidden cursor-pointer rounded-xl h-fit '>
-        {image.cover ? (
+        {images?.cover ? (
           <img
-            src={image?.cover}
+            src={images?.cover}
             alt={title}
             onClick={handleClick}
             className='aspect-auto transition-transform duration-300 hover:scale-105 w-96 max-h-[285px] cursor-pointer'
@@ -56,16 +59,8 @@ const ProjectImages = ({
         className='dark:text-white dark:bg-[#4e4e4e] bg-[#F5F5F5] w-[90%] h-[100%] rounded-md'
       >
         <div className='flex flex-row gap-4 px-4 bg-[#F5F5F5] dark:bg-[#4e4e4e63]'>
-          <div className='pt-2 w-11/12'>
-            {image.cover ? (
-              <img src={image.cover} alt={title} className='h-full w-[800px]' />
-            ) : (
-              <img
-                src='../../../assets/default.svg'
-                alt='default'
-                className='h-[450px] w-[800px] mt-20'
-              />
-            )}
+          <div className='pt-2 w-[63%]'>
+            <ImageCarousel images={images} title={title} video={video} />
           </div>
           <div className='w-1/3 pb-2 mr-10 mt-7'>
             <h1 className='text-4xl font-extrabold'>{title}</h1>

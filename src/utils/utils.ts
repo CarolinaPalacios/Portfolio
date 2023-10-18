@@ -15,13 +15,14 @@ export const projects: Projects[] = [
     title: 'Bookbuster',
     subtitle: 'Library web application',
     description: 'https://github.com/bookbuster-ar/web-app-front',
-    image: {
+    images: {
       cover: '../../assets/bookbuster.png',
       secondImage: '',
       thirdImage: '',
     },
     url: 'https://bookbuster-ar.vercel.app/',
     github: 'https://github.com/bookbuster-ar/web-app-backend',
+    video: 'https://www.youtube.com/embed/uYzy7-6IETo',
     technologies: [
       {
         name: 'React',
@@ -81,7 +82,7 @@ export const projects: Projects[] = [
     id: 2,
     title: 'Rick And Morty WIKI',
     subtitle: 'Web application',
-    image: {
+    images: {
       cover: '',
       secondImage: '',
       thirdImage: '',
@@ -120,7 +121,7 @@ export const projects: Projects[] = [
     id: 3,
     title: 'DogApp',
     subtitle: 'Web application',
-    image: {
+    images: {
       cover: '',
       secondImage: '',
       thirdImage: '',
@@ -191,14 +192,25 @@ export const experience: Experience[] = [
     image: {
       cover: '',
     },
-    description:
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur asperiores, libero nam in iusto possimus soluta praesentium vero consequuntur! Eos voluptates debitis eum quos saepe quod corporis fugiat minima? Dicta? Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, harum dolorum quidem rem commodi repellendus tenetur laboriosam ratione ipsam? Ullam, error expedita. Error eveniet soluta molestiae doloremque facilis, illum voluptas? Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ut mollitia aspernatur eligendi blanditiis deserunt et, recusandae at nostrum nulla expedita animi iste officiis quis amet ipsam cumque minus beatae? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem assumenda id dignissimos, error nostrum atque soluta nemo maxime expedita qui vitae architecto at corporis hic magni ipsa explicabo officia totam!',
+    description: `During my internship as a Back-End developer, I had the privilege of working with a dedicated team to build a robust Minimum Viable Product (MVP) for the company's web application. We used Node.js, Express, and Sequelize to connect to a PostgreSQL database, and Cloudinary for image storage. User authentication was handled through Firebase to ensure platform security.
+
+    I also implemented MercadoPago as the payment gateway to facilitate secure online transactions. On the front-end, we used React, Vite for efficient development, and Redux Toolkit for state management. MercadoPago's React SDK was integrated for seamless payment processing. For a visually appealing and responsive UI, we adopted Tailwind CSS.
+
+    This experience not only enhanced my development skills but also contributed significantly to my personal and professional growth. I'm grateful for the opportunity and teamwork that left a lasting impact on my journey toward excellence in software development.`,
     about: [
       {
-        about1: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-        about2: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-        about3: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-        about4: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+        about1:
+          'Developed server and database components using Node.js, Express, and Sequelize for PostgreSQL integration.',
+        about2:
+          'Implemented MercadoPago as the payment gateway for secure online transactions.',
+        about3:
+          'Utilized Firebase for user authentication, ensuring platform security.',
+        about4: `Integrated MercadoPago's React SDK for seamless payment processing on the platform.`,
+        about5:
+          'Leveraged Vite for fast development feedback and optimized bundle generation.',
+        about6:
+          'Employed Tailwind CSS for visually appealing and responsive UI design.',
+        about7: `Contributed to the overall user experience by enhancing user authentication and interactions through Firebase.`,
       },
     ],
     technologies: [
@@ -231,10 +243,6 @@ export const experience: Experience[] = [
         svg: 'https://www.svgrepo.com/show/349419/javascript.svg',
       },
       {
-        name: 'Typescript',
-        svg: 'https://www.svgrepo.com/show/349540/typescript.svg',
-      },
-      {
         name: 'Tailwind',
         svg: 'https://www.svgrepo.com/show/374118/tailwind.svg',
       },
@@ -265,10 +273,6 @@ export const experience: Experience[] = [
       {
         name: 'npm',
         svg: 'https://www.svgrepo.com/show/354128/npm.svg',
-      },
-      {
-        name: 'Playwright',
-        svg: '../../assets/playwright.svg',
       },
       {
         name: 'Jest',

@@ -6,7 +6,7 @@ interface Props {
   id: number;
   title: string;
   subtitle: string;
-  image: Image;
+  images: Image;
   video: string | undefined;
   github: string;
   url: string;
@@ -18,7 +18,7 @@ const {
   id,
   title,
   subtitle,
-  image,
+  images,
   video,
   github,
   url,
@@ -30,12 +30,13 @@ const {
 <div>
   <ProjectImages
     client:load
-    image={image}
+    images={images}
     title={title}
     github={github}
     url={url}
     technologies={technologies}
     description={description}
+    video={video}
   />
   <div class='flex justify-between py-2'>
     <div class='flex flex-col'>

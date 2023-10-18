@@ -2,7 +2,7 @@ export interface Projects {
   id: number;
   title: string;
   subtitle: string;
-  image: Image;
+  images: Image;
   video?: string;
   github: string;
   url: string;
@@ -32,6 +32,12 @@ export type About = {
   about2?: string;
   about3?: string;
   about4?: string;
+  about5?: string;
+  about6?: string;
+  about7?: string;
+  about8?: string;
+  about9?: string;
+  about10?: string;
 };
 
 export interface Experience {
