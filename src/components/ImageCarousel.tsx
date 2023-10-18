@@ -19,7 +19,7 @@ const ImageCarousel = ({ images, video, title }: Props) => {
   const NextArrow = ({ onClick }: { onClick: MouseEventHandler }) => {
     return (
       <div
-        className='text-3xl text-redbook absolute z-10 cursor-pointer right-0 top-[50%]'
+        className='text-3xl text-redbook absolute z-10 cursor-pointer -right-10 top-[50%]'
         onClick={onClick}
       >
         <SlArrowRight />
@@ -49,37 +49,64 @@ const ImageCarousel = ({ images, video, title }: Props) => {
     beforeChange: (current: number, next: number) => setCurrentIndex(next),
   };
   return (
-    <div>
+    <div className='mr-16'>
       <Slider {...settings}>
-        <div className='relative left-10'>
+        <div className='relative left-5'>
           <img
             src={images.cover || '../../../assets/default.svg'}
             alt={title}
-            className='h-[500px] w-[600px]'
+            className='h-[500px] w-[650px]'
           />
         </div>
         {images.secondImage && (
-          <div>
+          <div className='relative left-5'>
             <img
               src={images.secondImage}
               alt={title}
-              className='aspect-auto transition-transform duration-300 hover:scale-105 w-96 max-h-[285px] cursor-pointer'
+              className='h-[500px] w-[650px]'
             />
           </div>
         )}
         {images.thirdImage && (
-          <div>
+          <div className='relative left-5'>
             <img
               src={images.thirdImage}
               alt={title}
-              className='aspect-auto transition-transform duration-300 hover:scale-105 w-96 max-h-[285px] cursor-pointer'
+              className='h-[500px] w-[650px]'
+            />
+          </div>
+        )}
+        {images.fourthImage && (
+          <div className='relative left-5'>
+            <img
+              src={images.fourthImage}
+              alt={title}
+              className='h-[500px] w-[650px]'
+            />
+          </div>
+        )}
+        {images.fifthImage && (
+          <div className='relative left-5'>
+            <img
+              src={images.fifthImage}
+              alt={title}
+              className='h-[500px] w-[650px]'
+            />
+          </div>
+        )}
+        {images.sixthImage && (
+          <div className='relative left-5'>
+            <img
+              src={images.sixthImage}
+              alt={title}
+              className='h-[500px] w-[650px]'
             />
           </div>
         )}
         {video && (
-          <div className='relative left-10'>
+          <div className='relative left-5'>
             <iframe
-              width='600'
+              width='650'
               height='500'
               src={video}
               title={title}

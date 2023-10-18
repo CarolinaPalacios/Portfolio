@@ -14,11 +14,18 @@ export const projects: Projects[] = [
     id: 1,
     title: 'Bookbuster',
     subtitle: 'Library web application',
-    description: 'https://github.com/bookbuster-ar/web-app-front',
+    extra: 'https://github.com/bookbuster-ar/web-app-front',
+    description: `E-commerce developed as the final project during the Henry Bootcamp. We created an e-commerce focused on the sale of books and user subscriptions.
+      It was a substantial challenge as I had to learn new technologies and work methodologies.
+      Bookbuster is a digital bookstore where users can register to purchase new and used books, audiobooks, and e-pub editions. The primary idea is to foster a community of reading enthusiasts. Users can leave book reviews, share memorable quotes, and engage with comments and likes on others' reviews and quotes. Additionally, users can organize their favorite and to-be-read books on different bookshelves.
+      Furthermore, since the company did not have an inventory management ERP, I took the initiative to create an administrator dashboard. This dashboard allows for various functions, including user management, transaction monitoring, and inventory control.`,
     images: {
       cover: '../../assets/bookbuster.png',
-      secondImage: '',
-      thirdImage: '',
+      secondImage: '../../assets/detalle-bookbuster.png',
+      thirdImage: '../../assets/explora-bookbuster.png',
+      fourthImage: '../../assets/genero-bookbuster.png',
+      fifthImage: '../../assets/suscribite-bookbuster.png',
+      sixthImage: '../../assets/vende-bookbuster.png',
     },
     url: 'https://bookbuster-ar.vercel.app/',
     github: 'https://github.com/bookbuster-ar/web-app-backend',
@@ -122,14 +129,15 @@ export const projects: Projects[] = [
     title: 'DogApp',
     subtitle: 'Web application',
     images: {
-      cover: '',
-      secondImage: '',
-      thirdImage: '',
+      cover: '../../assets/dogapp-verde.png',
+      secondImage: '../../assets/dogdetail-verde.png',
+      thirdImage: '../../assets/dogform-verde.png',
     },
-    video: 'https://youtu.be/q_oiNJsLKXg',
+    video: 'https://www.youtube.com/embed/q_oiNJsLKXg',
     github: 'https://github.com/CarolinaPalacios/PI-Dogs',
-    url: '',
-    description: '',
+    url: 'https://github.com/CarolinaPalacios/PI-Dogs',
+    description:
+      'I developed a single page application focused on the canine world, using The Dog API as a data source. This innovative app allows users to explore a wide variety of dog breeds, providing an interactive and engaging experience.',
     technologies: [
       {
         name: 'Javascript',
@@ -192,11 +200,7 @@ export const experience: Experience[] = [
     image: {
       cover: '',
     },
-    description: `During my internship as a Back-End developer, I had the privilege of working with a dedicated team to build a robust Minimum Viable Product (MVP) for the company's web application. We used Node.js, Express, and Sequelize to connect to a PostgreSQL database, and Cloudinary for image storage. User authentication was handled through Firebase to ensure platform security.
-
-    I also implemented MercadoPago as the payment gateway to facilitate secure online transactions. On the front-end, we used React, Vite for efficient development, and Redux Toolkit for state management. MercadoPago's React SDK was integrated for seamless payment processing. For a visually appealing and responsive UI, we adopted Tailwind CSS.
-
-    This experience not only enhanced my development skills but also contributed significantly to my personal and professional growth. I'm grateful for the opportunity and teamwork that left a lasting impact on my journey toward excellence in software development.`,
+    description: `During my Back-End development internship, I worked with a team to build a robust MVP web application using Node.js, Express, Sequelize, PostgreSQL, Cloudinary, and Firebase for user authentication. I also integrated MercadoPago for secure online payments. The front end was built with React, Vite, Redux Toolkit, and Tailwind CSS for a responsive UI. This experience enhanced my skills and contributed to my growth as a developer.`,
     about: [
       {
         about1:

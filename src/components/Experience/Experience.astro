@@ -3,8 +3,8 @@ import {experience} from '../../utils/utils'
 import JobCard from './JobCard.astro'
 ---
 
-<section class='flex sm:w-full w-[90%] flex-col gap-12 py-16'>
-  <h1 class='text-6xl font-extrabold'>Experience</h1>
+<h1 class='text-6xl font-extrabold pt-20'>Experience</h1>
+<section class='flex sm:w-full w-[90%] flex-col gap-12 py-8'>
   <div class="relative flex flex-col gap-20">
     {experience.map(({
       title,
@@ -26,5 +26,5 @@ import JobCard from './JobCard.astro'
       />
     ))}
   </div>
-   <div class='absolute border-l-[1px] border-dashed dark:border-gray-200 border-gray-700 left-0 h-full sm:left-2/4 z-0'></div>
+   
 </section>

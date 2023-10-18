@@ -2,6 +2,7 @@ export interface Projects {
   id: number;
   title: string;
   subtitle: string;
+  extra?: string;
   images: Image;
   video?: string;
   github: string;
@@ -13,6 +14,9 @@ export type Image = {
   cover: string;
   secondImage?: string;
   thirdImage?: string;
+  fourthImage?: string;
+  fifthImage?: string;
+  sixthImage?: string;
 };
 
 export type Technologies = {

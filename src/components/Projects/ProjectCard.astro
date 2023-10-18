@@ -12,6 +12,7 @@ interface Props {
   url: string;
   technologies: Technologies[];
   description: string;
+  extra?: string;
 }
 
 const {
@@ -24,6 +25,7 @@ const {
   url,
   technologies,
   description,
+  extra
 } = Astro.props;
 ---
 
@@ -34,6 +36,7 @@ const {
     title={title}
     github={github}
     url={url}
+    extra={extra}
     technologies={technologies}
     description={description}
     video={video}

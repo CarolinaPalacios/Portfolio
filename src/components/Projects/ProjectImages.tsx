@@ -6,6 +6,7 @@ interface Props {
   images: Image;
   title: string;
   video?: string;
+  extra?: string;
   github: string;
   url: string;
   technologies: Technologies[];
@@ -16,6 +17,7 @@ const ProjectImages = ({
   title,
   github,
   url,
+  extra,
   technologies,
   description,
   video,
@@ -58,11 +60,11 @@ const ProjectImages = ({
         ref={dialogRef}
         className='dark:text-white dark:bg-[#4e4e4e] bg-[#F5F5F5] w-[90%] h-[100%] rounded-md'
       >
-        <div className='flex flex-row gap-4 px-4 bg-[#F5F5F5] dark:bg-[#4e4e4e63]'>
+        <div className='flex flex-row gap-4 pt-5 px-4 bg-[#F5F5F5] dark:bg-[#4e4e4e63]'>
           <div className='pt-2 w-[63%]'>
             <ImageCarousel images={images} title={title} video={video} />
           </div>
-          <div className='w-1/3 pb-2 mr-10 mt-7'>
+          <div className='w-1/3 pb-2 mr-10 mt-5'>
             <h1 className='text-4xl font-extrabold'>{title}</h1>
             <div className='dark:hover:bg-[#FFFFFF11] dark:text-[#a8a8a8] dark:hover:text-[#F3F3F3] bg-transparent p-[5px] text-[#535353] hover:text-[#252525] hover:bg-[#cccccc38] h-10 absolute top-8 right-5 lg:p-2 rounded-md'>
               <button onClick={handleCloseModal}>
@@ -84,7 +86,7 @@ const ProjectImages = ({
                 </svg>
               </button>
             </div>
-            <div className='flex items-center gap-4 mt-10'>
+            <div className='flex items-center gap-4 mt-5'>
               <a
                 href={github}
                 target='_blank'
@@ -132,27 +134,30 @@ const ProjectImages = ({
                 Visit website
               </a>
             </div>
-            <br />
-            <p className='text-[#252525] dark:text-[#CCCCCC] text-[0.91rem] w-80'>
-              {description}
-            </p>
-            <p className='text-[#252525] dark:text-[#CCCCCC] text-[0.91rem] my-5'>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-              dolorum fugit temporibus deleniti, maiores corporis harum
-              expedita. Perferendis fuga facilis quo id, eligendi est recusandae
-              odio, esse ipsum ipsam obcaecati?
-            </p>
-            <div className=''>
-              Tecnologies:
-              {/* flex flex-row gap-3 mb-1 */}
-              <ul className='flex flex-wrap mb-0 gap-x-4 gap-y-2 text-light-texto-secondary dark:text-dark-texto-secondary '>
-                {technologies.map((technology) => (
-                  <li className='flex items-center gap-2 text-sm dark:text-secondaryBText text-secondaryWText'>
-                    <img src={technology.svg} className='h-6 w-6 ' alt='' />
-                    {technology.name}
-                  </li>
-                ))}
-              </ul>
+            <div className='flex flex-col gap-2 justify-between mt-5'>
+              {extra && (
+                <a
+                  href={extra}
+                  target='_blank'
+                  className='text-[#252525] dark:text-[#e9e9e9] text-[0.91rem] w-80'
+                >
+                  {extra}
+                </a>
+              )}
+              <p className='text-[#252525] dark:text-[#CCCCCC] text-[0.91rem] w-80 overflow-y-auto max-h-[150px]'>
+                {description}
+              </p>
+              <div className='py-2'>
+                Technologies:
+                <ul className='flex flex-wrap mb-0 gap-x-4 gap-y-2 py-2'>
+                  {technologies.map((technology) => (
+                    <li className='flex items-center gap-2 text-sm dark:text-secondaryBText text-secondaryWText'>
+                      <img src={technology.svg} className='h-6 w-6 ' alt='' />
+                      {technology.name}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
         </div>

@@ -7,7 +7,7 @@ import { projects } from '../../utils/utils.ts';
   class='flex flex-col w-[100%] sm:w-full gap-12 py-10'
 >
   <div class='w-1/2 flex flex-col gap-8'>
-    <h1 class='flex  font-extrabold text-6xl'>Projects</h1>
+    <h1 class='flex font-extrabold text-6xl'>Projects</h1>
   </div>
     <div class='grid gap-y-8 lg:grid-cols-2 place-items-center '>
       {
@@ -20,6 +20,7 @@ import { projects } from '../../utils/utils.ts';
             video,
             github,
             url,
+            extra,
             technologies,
             description,
           }) => (
@@ -31,6 +32,7 @@ import { projects } from '../../utils/utils.ts';
               video={video}
               github={github}
               url={url}
+              extra={extra}
               technologies={technologies}
               description={description}
             />
