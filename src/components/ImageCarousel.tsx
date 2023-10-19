@@ -1,6 +1,6 @@
 import { useState, type MouseEventHandler } from 'react';
 import Slider from 'react-slick';
-import { SlArrowRight, SlArrowLeft } from 'react-icons/sl';
+import { SlArrowRight, SlArrowLeft } from 'react-icons/sl/index.esm.js';
 
 import type { Image } from '../utils/utils';
 
