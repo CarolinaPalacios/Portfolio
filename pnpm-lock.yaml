@@ -15,16 +15,16 @@ dependencies:
     specifier: 18.0.21
     version: 18.0.21
   '@types/react-dom':
-    specifier: 18.0.6
+    specifier: ^18.0.6
     version: 18.0.6
   astro:
     specifier: 3.1.1
     version: 3.1.1
   react:
-    specifier: 18.2.0
+    specifier: ^18.0.0
     version: 18.2.0
   react-dom:
-    specifier: 18.2.0
+    specifier: ^18.0.0
     version: 18.2.0(react@18.2.0)
   react-github-calendar:
     specifier: 4.0.1
