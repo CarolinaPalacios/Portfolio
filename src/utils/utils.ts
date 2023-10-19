@@ -20,12 +20,18 @@ export const projects: Projects[] = [
       Bookbuster is a digital bookstore where users can register to purchase new and used books, audiobooks, and e-pub editions. The primary idea is to foster a community of reading enthusiasts. Users can leave book reviews, share memorable quotes, and engage with comments and likes on others' reviews and quotes. Additionally, users can organize their favorite and to-be-read books on different bookshelves.
       Furthermore, since the company did not have an inventory management ERP, I took the initiative to create an administrator dashboard. This dashboard allows for various functions, including user management, transaction monitoring, and inventory control.`,
     images: {
-      cover: '../../assets/bookbuster.png',
-      secondImage: '../../assets/detalle-bookbuster.png',
-      thirdImage: '../../assets/explora-bookbuster.png',
-      fourthImage: '../../assets/genero-bookbuster.png',
-      fifthImage: '../../assets/suscribite-bookbuster.png',
-      sixthImage: '../../assets/vende-bookbuster.png',
+      cover:
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1697684459/pvogoqwfvqgro9mu5xvx.png',
+      secondImage:
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1697684511/lyxhcefsqsyoasbi9gfg.png',
+      thirdImage:
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1697684520/mu5zqhykssxcjnmc36zx.png',
+      fourthImage:
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1697684511/qffpuqezqfxnuumm9ehz.png',
+      fifthImage:
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1697684521/dykni5thbmud6iij8owv.png',
+      sixthImage:
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1697684524/jnqbgqsnwgdqw5rv2huz.png',
     },
     url: 'https://bookbuster-ar.vercel.app/',
     github: 'https://github.com/bookbuster-ar/web-app-backend',
@@ -77,7 +83,7 @@ export const projects: Projects[] = [
       },
       {
         name: 'Mercado Pago',
-        svg: '../../assets/mercadopago.svg',
+        svg: 'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1697684517/hzln1mva5cla8swzbicu.png',
       },
       {
         name: 'GitHub',
@@ -120,7 +126,7 @@ export const projects: Projects[] = [
       },
       {
         name: 'Playwright',
-        svg: '../../assets/playwright.svg',
+        svg: 'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1697684518/cepdnfvlysruzpoc4rpd.svg',
       },
     ],
   },
@@ -129,9 +135,12 @@ export const projects: Projects[] = [
     title: 'DogApp',
     subtitle: 'Web application',
     images: {
-      cover: '../../assets/dogapp-verde.png',
-      secondImage: '../../assets/dogdetail-verde.png',
-      thirdImage: '../../assets/dogform-verde.png',
+      cover:
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/f_auto,q_auto/mmsjrokc7qk1zthtlipc',
+      secondImage:
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1697684523/jkl3j0k2zg31zcpu8nwa.png',
+      thirdImage:
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1697684518/yuip2gzthapdl0vtuf5i.png',
     },
     video: 'https://www.youtube.com/embed/q_oiNJsLKXg',
     github: 'https://github.com/CarolinaPalacios/PI-Dogs',

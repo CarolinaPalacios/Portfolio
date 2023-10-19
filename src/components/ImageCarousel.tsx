@@ -84,7 +84,10 @@ const ImageCarousel = ({ images, video, title }: Props) => {
       <Slider {...settings}>
         <div className='relative left-5'>
           <img
-            src={images.cover || '../../../assets/default.svg'}
+            src={
+              images.cover ||
+              'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1697684509/etrttzuquplxxgy8ncnv.svg'
+            }
             alt={title}
             className='h-[500px] w-[650px]'
           />

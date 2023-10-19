@@ -49,7 +49,7 @@ const ProjectImages = ({
           />
         ) : (
           <img
-            src='../../../assets/default.svg'
+            src='https://res.cloudinary.com/dr4c4eqnr/image/upload/v1697684509/etrttzuquplxxgy8ncnv.svg'
             alt='default'
             onClick={handleClick}
             className='aspect-auto transition-transform duration-300 hover:scale-105 w-96 h-[285px] max-h-[285px] cursor-pointer'
@@ -144,11 +144,11 @@ const ProjectImages = ({
                   {extra}
                 </a>
               )}
-              <p className='text-[#252525] dark:text-[#CCCCCC] text-[0.91rem] w-80 overflow-y-auto max-h-[150px]'>
+              <p className='text-[#252525] dark:text-[#CCCCCC] text-[0.91rem] w-100 pr-5 overflow-y-auto max-h-[150px]'>
                 {description}
               </p>
               <div className='py-2'>
-                Technologies:
+                Tecnologies:
                 <ul className='flex flex-wrap mb-0 gap-x-4 gap-y-2 py-2'>
                   {technologies.map((technology) => (
                     <li className='flex items-center gap-2 text-sm dark:text-secondaryBText text-secondaryWText'>
