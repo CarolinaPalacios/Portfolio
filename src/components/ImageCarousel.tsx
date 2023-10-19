@@ -1,7 +1,5 @@
 import { useState, type MouseEventHandler } from 'react';
 import Slider from 'react-slick';
-import pkg from 'react-icons/sl/index.esm.js';
-const { SlArrowRight, SlArrowLeft } = pkg;
 
 import type { Image } from '../utils/utils';
 
@@ -23,7 +21,23 @@ const ImageCarousel = ({ images, video, title }: Props) => {
         className='text-3xl text-redbook absolute z-10 cursor-pointer -right-10 top-[50%]'
         onClick={onClick}
       >
-        <SlArrowRight />
+        <svg
+          xmlns='http://www.w3.org/2000/svg'
+          class='icon icon-tabler icon-tabler-arrow-right'
+          width='24'
+          height='24'
+          viewBox='0 0 24 24'
+          stroke-width='1.75'
+          stroke='currentColor'
+          fill='none'
+          stroke-linecap='round'
+          stroke-linejoin='round'
+        >
+          <path stroke='none' d='M0 0h24v24H0z' fill='none'></path>
+          <path d='M5 12l14 0'></path>
+          <path d='M13 18l6 -6'></path>
+          <path d='M13 6l6 6'></path>
+        </svg>
       </div>
     );
   };
@@ -33,7 +47,23 @@ const ImageCarousel = ({ images, video, title }: Props) => {
         className='text-3xl text-redbook absolute z-10 cursor-pointer -left-5 top-[50%]'
         onClick={onClick}
       >
-        <SlArrowLeft />
+        <svg
+          xmlns='http://www.w3.org/2000/svg'
+          class='icon icon-tabler icon-tabler-arrow-left'
+          width='24'
+          height='24'
+          viewBox='0 0 24 24'
+          stroke-width='1.75'
+          stroke='currentColor'
+          fill='none'
+          stroke-linecap='round'
+          stroke-linejoin='round'
+        >
+          <path stroke='none' d='M0 0h24v24H0z' fill='none'></path>
+          <path d='M5 12l14 0'></path>
+          <path d='M5 12l6 6'></path>
+          <path d='M5 12l6 -6'></path>
+        </svg>
       </div>
     );
   };
