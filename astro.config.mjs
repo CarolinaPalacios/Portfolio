@@ -8,4 +8,5 @@ export default defineConfig({
   integrations: [tailwind(), react()],
 
   site: 'https://CarolinaPalacios.github.io',
+  base: '/',
 });
