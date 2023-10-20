@@ -2,8 +2,8 @@
 import {contacts} from '../utils/utils'
 ---
 
-<section class='flex flex-col sm:w-full w-[90%] gap-12 py-20'>
-  <h1 class='flex  font-extrabold text-6xl'>Contact me!</h1>
+<section class='flex flex-col sm:w-full w-[90%] gap-12 py-10'>
+  <h1 class='flex desktop-lg:text-6xl tablet-md:text-4xl mobile-md:text-3xl mobile-sm:text-3xl font-extrabold '>Contact me!</h1>
    <ul class='flex flex-wrap items-center justify-start gap-8 list-none lg:justify-center'>
      {
      contacts.map((contact) => (
@@ -11,7 +11,7 @@ import {contacts} from '../utils/utils'
         <img src={contact.svg} alt={contact.name} class="w-14 h-30"/>
         <div class="flex flex-col justify-center">
           <small class="dark:text-gray-400 text-gray-700 font-medium">{contact.text}</small>
-          <a href={contact.link} class="text-lg font-bold dark:text-white text-black hover:underline decoration-1">{contact.name}</a>
+          <a href={contact.link} class="desktop-lg:text-lg mobile-sm:text-sm font-bold dark:text-white text-black hover:underline decoration-1">{contact.name}</a>
         </div>
       </li>
       ))

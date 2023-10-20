@@ -4,12 +4,12 @@ import { projects } from '../../utils/utils.ts';
 ---
 
 <section
-  class='flex flex-col w-[100%] sm:w-full gap-12 py-10'
+  class='flex flex-col w-full sm:w-full gap-12 pt-10 mobile-sm:mt-80 tablet-md:mt-40 desktop-lg:pt-48 pb-10'
 >
-  <div class='w-1/2 flex flex-col gap-8'>
-    <h1 class='flex font-extrabold text-6xl'>Projects</h1>
+<div class='w-full flex flex-col gap-8'>
+    <h1 class='flex flex-initial font-extrabold desktop-lg:text-6xl self-start mobile-sm:text-3xl mobile-md:text-3xl tablet-md:text-4xl'>Projects</h1>
   </div>
-    <div class='grid gap-y-8 lg:grid-cols-2 place-items-center '>
+    <div class='grid gap-y-8 desktop-lg:grid-cols-2 tablet-md:grid-cols-2 tablet-md:gap-x-14 place-items-center '>
       {
         projects.map(
           ({

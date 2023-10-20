@@ -18,7 +18,7 @@ const ImageCarousel = ({ images, video, title }: Props) => {
   const NextArrow = ({ onClick }: { onClick: MouseEventHandler }) => {
     return (
       <div
-        className='text-3xl text-redbook absolute z-10 cursor-pointer -right-10 top-[50%]'
+        className='text-3xl text-redbook absolute z-10 cursor-pointer -right-10 top-[50%] mobile-md:-right-5 tablet-md:-right-1'
         onClick={onClick}
       >
         <svg
@@ -80,68 +80,67 @@ const ImageCarousel = ({ images, video, title }: Props) => {
     beforeChange: (current: number, next: number) => setCurrentIndex(next),
   };
   return (
-    <div className='mr-16'>
+    <div className='desktop-lg:mr-16'>
       <Slider {...settings}>
-        <div className='relative left-5'>
+        <div className='relative desktop-lg:left-5 mobile-md:left-3 mobile-sm:top-16 mobile-sm:left-4'>
           <img
             src={
               images.cover ||
               'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1697684509/etrttzuquplxxgy8ncnv.svg'
             }
             alt={title}
-            className='h-[500px] w-[650px]'
+            className='h-[500px] w-[650px] mobile-sm:w-[240px] mobile-sm:h-[240px] tablet-md:h-[500px] tablet-md:w-[550px]'
           />
         </div>
         {images.secondImage && (
-          <div className='relative left-5'>
+          <div className='relative desktop-lg:left-5 mobile-md:left-3 mobile-sm:top-16 mobile-sm:left-4'>
             <img
               src={images.secondImage}
               alt={title}
-              className='h-[500px] w-[650px]'
+              className='h-[500px] w-[650px] mobile-sm:w-[240px] mobile-sm:h-[240px] tablet-md:h-[500px] tablet-md:w-[550px]'
             />
           </div>
         )}
         {images.thirdImage && (
-          <div className='relative left-5'>
+          <div className='relative desktop-lg:left-5 mobile-md:left-3 mobile-sm:top-16 mobile-sm:left-4'>
             <img
               src={images.thirdImage}
               alt={title}
-              className='h-[500px] w-[650px]'
+              className='h-[500px] w-[650px] mobile-sm:w-[240px] mobile-sm:h-[240px] tablet-md:h-[500px] tablet-md:w-[550px]'
             />
           </div>
         )}
         {images.fourthImage && (
-          <div className='relative left-5'>
+          <div className='relative desktop-lg:left-5 mobile-md:left-3 mobile-sm:top-16 mobile-sm:left-4'>
             <img
               src={images.fourthImage}
               alt={title}
-              className='h-[500px] w-[650px]'
+              className='h-[500px] w-[650px] mobile-sm:w-[240px] mobile-sm:h-[240px] tablet-md:h-[500px] tablet-md:w-[550px]'
             />
           </div>
         )}
         {images.fifthImage && (
-          <div className='relative left-5'>
+          <div className='relative desktop-lg:left-5 mobile-md:left-3 mobile-sm:top-16 mobile-sm:left-4'>
             <img
               src={images.fifthImage}
               alt={title}
-              className='h-[500px] w-[650px]'
+              className='h-[500px] w-[650px] mobile-sm:w-[240px] mobile-sm:h-[240px] tablet-md:h-[500px] tablet-md:w-[550px]'
             />
           </div>
         )}
         {images.sixthImage && (
-          <div className='relative left-5'>
+          <div className='relative desktop-lg:left-5 mobile-md:left-3 mobile-sm:top-16 mobile-sm:left-4'>
             <img
               src={images.sixthImage}
               alt={title}
-              className='h-[500px] w-[650px]'
+              className='h-[500px] w-[650px] mobile-sm:w-[240px] mobile-sm:h-[240px] tablet-md:h-[500px] tablet-md:w-[550px]'
             />
           </div>
         )}
         {video && (
-          <div className='relative left-5'>
+          <div className='relative desktop-lg:left-5 mobile-md:left-2 mobile-sm:top-16 mobile-sm:left-4'>
             <iframe
-              width='650'
-              height='500'
+              className='desktop-lg:h-[500px] desktop-lg:w-full mobile-md:w-full mobile-md:h-[500px] mobile-sm:w-full mobile-sm:h-[240px] tablet-md:h-[500px] tablet-md:w-[550px]'
               src={video}
               title={title}
               allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'

@@ -1,0 +1,84 @@
+import { useState } from 'react';
+import {
+  HomeIcon,
+  AboutIcon,
+  ProjectsIcon,
+  ExperienceIcon,
+  ContactIcon,
+} from './Icons/MenuIcons';
+
+const MobileMenu = () => {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const menuItems = [
+    { title: 'Home', url: '/', icon: <HomeIcon /> },
+    { title: 'About', url: '/#about', icon: <AboutIcon /> },
+    { title: 'Projects', url: '/#projects', icon: <ProjectsIcon /> },
+    { title: 'Experience', url: '/#experience', icon: <ExperienceIcon /> },
+    { title: 'Contact', url: '/#contact', icon: <ContactIcon /> },
+  ];
+
+  return (
+    <div className='lg:hidden'>
+      <button
+        onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+        className='text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white relative -left-5'
+      >
+        <svg
+          xmlns='http://www.w3.org/2000/svg'
+          className='w-6 h-6'
+          fill='none'
+          viewBox='0 0 24 24'
+          stroke='currentColor'
+        >
+          <path
+            strokeLinecap='round'
+            strokeLinejoin='round'
+            strokeWidth={2}
+            d='M4 6h16M4 12h16M4 18h16'
+          />
+        </svg>
+      </button>
+      {mobileMenuOpen && (
+        <div className='lg:hidden absolute top-0 left-0 w-full h-screen bg-white dark:bg-[#252525] flex flex-col items-center justify-center duration-500 transition-all text-xl font-medium'>
+          <button
+            onClick={() => setMobileMenuOpen(false)}
+            className='absolute top-5 left-5 text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white focus:outline-none'
+          >
+            <svg
+              xmlns='http://www.w3.org/2000/svg'
+              className='w-6 h-6'
+              fill='none'
+              viewBox='0 0 24 24'
+              stroke='currentColor'
+            >
+              <path
+                strokeLinecap='round'
+                strokeLinejoin='round'
+                strokeWidth={2}
+                d='M6 18L18 6M6 6l12 12'
+              />
+            </svg>
+          </button>
+          <nav className='flex flex-col items-center space-y-4'>
+            <ul className='flex flex-col items-start justify-center gap-20'>
+              {menuItems.map(({ title, url, icon }) => (
+                <li className='dark:text-gray-400 dark:hover:text-white hover:text-black text-gray-700 w-fit'>
+                  <a
+                    href={url}
+                    className='flex items-center justify-start gap-5'
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {icon} {title}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default MobileMenu;
