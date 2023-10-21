@@ -1,6 +1,10 @@
 ---
 import Typewriter from './Typewriter.tsx';
 import About from './About.astro';
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <div
@@ -10,7 +14,7 @@ import About from './About.astro';
   <p
     class='lg:leading-[1.25] sm:leading-[1.25] leading-[1.25] mobile-sm:text-3xl mobile-md:text-3xl text-6xl font-extrabold lg:w-[60%] w-[90%] py-5 tablet-md:text-5xl'
   >
-    Developer with a deep passion for <Typewriter client:only='react' />
+   {t('HomeText')} <Typewriter client:only='react' />
   </p>
   <div class="flex items-center gap-10 select-none mt-10">
     <a href='#contact' class="flex items-center gap-1 py-4 font-bold text-black w-fit bg-[#748c74] dark:bg-blue-400 hover:opacity-90 px-6 rounded-2xl" aria-label="Contact me">

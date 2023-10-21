@@ -7,6 +7,11 @@ import {
   ContactIcon,
 } from './Icons/MenuIcons';
 
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+const url = new URL(window.location.href);
+const lang = getLangFromUrl(url);
+const t = useTranslations(lang);
+
 const MobileMenu = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -69,7 +74,15 @@ const MobileMenu = () => {
                     className='flex items-center justify-start gap-5'
                     onClick={() => setMobileMenuOpen(false)}
                   >
-                    {icon} {title}
+                    {icon}{' '}
+                    {t(
+                      title as
+                        | 'Home'
+                        | 'About'
+                        | 'Projects'
+                        | 'Experience'
+                        | 'Contact'
+                    )}
                   </a>
                 </li>
               ))}

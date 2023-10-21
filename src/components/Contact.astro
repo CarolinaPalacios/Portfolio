@@ -1,9 +1,12 @@
 ---
 import {contacts} from '../utils/utils'
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <section class='flex flex-col sm:w-full w-[90%] gap-12 py-10'>
-  <h1 class='flex desktop-lg:text-6xl tablet-md:text-4xl mobile-md:text-3xl mobile-sm:text-3xl font-extrabold '>Contact me!</h1>
+  <h1 class='flex desktop-lg:text-6xl tablet-md:text-4xl mobile-md:text-3xl mobile-sm:text-3xl font-extrabold '>{t('Contact')}</h1>
    <ul class='flex flex-wrap items-center justify-start gap-8 list-none lg:justify-center'>
      {
      contacts.map((contact) => (

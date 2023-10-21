@@ -1,0 +1,43 @@
+{
+  "projects": {
+    "bookbuster": {
+      "title": "Bookbuster",
+      "subtitle": "Library web application",
+      "description": "E-commerce developed as the final project during the Henry Bootcamp. We created an e-commerce focused on the sale of books and user subscriptions. It was a substantial challenge as I had to learn new technologies and work methodologies. Bookbuster is a digital bookstore where users can register to purchase new and used books, audiobooks, and e-pub editions. The primary idea is to foster a community of reading enthusiasts. Users can leave book reviews, share memorable quotes, and engage with comments and likes on others' reviews and quotes. Additionally, users can organize their favorite and to-be-read books on different bookshelves. Furthermore, since the company did not have an inventory management ERP, I took the initiative to create an administrator dashboard. This dashboard allows for various functions, including user management, transaction monitoring, and inventory control."
+    },
+    "rickandmorty": {
+      "title": "Rick And Morty WIKI",
+      "subtitle": "Web application",
+      "description": ""
+    },
+    "DogApp": {
+      "title": "Dog App",
+      "subtitle": "Web application",
+      "description": "I developed a single page application focused on the canine world, using The Dog API as a data source. This innovative app allows users to explore a wide variety of dog breeds, providing an interactive and engaging experience."
+    }
+  },
+  "contact": {
+    "email": "Send me an email",
+    "GitHub": "GitHub Profile",
+    "LinkedIn": "LinkedIn Profile"
+  },
+  "experience": {
+    "bookbuster": {
+      "title": "Bookbuster web application",
+      "company": "Bookbuster",
+      "timeframe": "July 2023 - August 2023",
+      "description": "During my Back-End development internship, I worked with a team to build a robust MVP web application using Node.js, Express, Sequelize, PostgreSQL, Cloudinary, and Firebase for user authentication. I also integrated MercadoPago for secure online payments. The front end was built with React, Vite, Redux Toolkit, and Tailwind CSS for a responsive UI. This experience enhanced my skills and contributed to my growth as a developer.",
+      "about": [
+        {
+          "about1": "Developed server and database components using Node.js, Express, and Sequelize for PostgreSQL integration.",
+          "about2": "Implemented MercadoPago as the payment gateway for secure online transactions.",
+          "about3": "Utilized Firebase for user authentication, ensuring platform security.",
+          "about4": "Integrated MercadoPago's React SDK for seamless payment processing on the platform.",
+          "about5": "Leveraged Vite for fast development feedback and optimized bundle generation.",
+          "about6": "Employed Tailwind CSS for visually appealing and responsive UI design.",
+          "about7": "Contributed to the overall user experience by enhancing user authentication and interactions through Firebase."
+        }
+      ]
+    }
+  }
+}

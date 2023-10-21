@@ -61,10 +61,10 @@ const ProjectImages = ({
         className='dark:text-white dark:bg-[#4e4e4e] bg-[#F5F5F5] w-[90%] h-fit rounded-md'
       >
         <div className='flex flex-row mobile-sm:flex-col mobile-md:flex-col gap-4 px-4 bg-[#F5F5F5] dark:bg-[#4e4e4e63]'>
-          <div className='w-full sm:w-2/3 mobile-sm:w-64 mobile-md:w-full mobile-sm:h-80'>
+          <div className='w-full sm:w-2/3 mobile-sm:w-64 mobile-md:w-full mobile-sm:h-80 mobile-sm:mt-0 mt-5'>
             <ImageCarousel images={images} title={title} video={video} />
           </div>
-          <div className='w-full mobile-sm:w-1/3  pb-1 '>
+          <div className='desktop-lg:w-1/2 mobile-sm:w-full mobile-sm:mt-0 mt-10 pb-1 '>
             <h1 className='text-4xl font-extrabold'>{title}</h1>
             <div className='dark:hover:bg-[#FFFFFF11] dark:text-[#a8a8a8] dark:hover:text-[#F3F3F3] bg-transparent p-[5px] text-[#535353] hover:text-[#252525] hover:bg-[#cccccc38] h-10 absolute top-8 right-5 lg:p-2 rounded-md'>
               <button onClick={handleCloseModal}>

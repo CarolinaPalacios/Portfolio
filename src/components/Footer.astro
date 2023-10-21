@@ -1,12 +1,14 @@
 ---
-
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <footer class="flex items-center desktop-lg:w-full">
   <div class="flex items-center justify-between py-4 lg:w-full w-[90%] gap-12 my-0 mx-auto border-t-[1px] border-[#50505088]">
     <section>
       <h1 class="text-lg font-extrabold ">Carolina Palacios</h1>
-      <p>This portfolio was developed with:</p>
+      <p>{t('Footer')}</p>
       <div class='flex gap-3 py-3'>
         <a href='https://astro.build' target='_blank' class=""><img src="https://icon.icepanel.io/Technology/png-shadow-512/Astro.png" alt="Astro"  class="w-8 h-9"/></a>
          <a href='https://www.typescriptlang.org/' target='_blank'><img src="https://icon.icepanel.io/Technology/svg/TypeScript.svg" alt="TypeScript" class="w-8 h-8"/></a>

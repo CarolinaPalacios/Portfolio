@@ -1,6 +1,9 @@
 ---
 import ThemeIcon from "./ThemeIcon.astro";
 import MobileMenu from "./MobileMenu";
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <header class="flex items-center justify-center">
@@ -29,9 +32,9 @@ import MobileMenu from "./MobileMenu";
         ['About', '/#about'],
         ['Projects', '/#projects'],
         ['Experience', '/#experience'],
-        ['Contact', '/#contact'],
+        ['ContactTitle', '/#contact'],
       ].map(([title, url]) => (
-        <li class="dark:text-gray-400 dark:hover:text-white hover:text-black text-gray-700"><a href={url}>{title}</a>
+        <li class="dark:text-gray-400 dark:hover:text-white hover:text-black text-gray-700"><a href={url}>{t(title as 'Home' | 'About' | 'Projects' | 'Experience' | 'ContactTitle')}</a>
         </li>
         ))
       }
@@ -40,7 +43,7 @@ import MobileMenu from "./MobileMenu";
     <nav class="hidden lg:flex space-x-4">
       <ul class='flex gap-4'>
           {[
-        ['Linkedin', 'https://www.linkedin.com/in/carolina-palacios-0723b726b/'],
+        ['Linkedin', 'https://www.linkedin.com/in/CarolinaPalacios1'],
         ['Github', 'https://github.com/CarolinaPalacios'],
       ].map(([title, url]) => (
         <li class="dark:text-gray-400 dark:hover:text-white hover:text-black text-gray-700">

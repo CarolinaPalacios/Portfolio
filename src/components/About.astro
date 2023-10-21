@@ -1,5 +1,7 @@
 ---
-
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <section class='flex lg:flex-row flex-col h-full items-center desktop-lg:gap-16 desktop-lg:mt-10 tablet-md:pt-10 mobile-md:py-10 '>
@@ -8,16 +10,10 @@
       <h1
         class='flex flex-initial font-extrabold desktop-lg:text-6xl self-start mobile-sm:text-3xl mobile-md:text-3xl tablet-md:text-4xl'
       >
-        About me
+        {t('About')}
       </h1>
       <p class="text-[0.91rem] text-left py-5 desktop-lg:w-11/12 ">
-         I transitioned from the pharmaceutical industry to technology, where I found my true calling - creating web solutions and tackling complex challenges with creativity and a unique perspective.
-         <br>
-         I'm passionate about collaborating with forward-thinking teams that are dedicated to personal growth and share a common goal: harnessing our skills to create a positive impact through innovative products and services.
-         <br>
-         It's not just about writing code; it's about using technology as a force for change. I'm committed to driving progress, solving real-world problems, and making a difference in the digital landscape.
-         <br>
-         If you're seeking a dedicated Full Stack Web Developer with a knack for creative problem-solving, let's connect and explore how we can make an impact together.       
+        {t('AboutSection')}
       </p>
     </div>
   </article>

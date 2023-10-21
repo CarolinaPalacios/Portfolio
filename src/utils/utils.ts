@@ -16,9 +16,9 @@ export const projects: Projects[] = [
     subtitle: 'Library web application',
     extra: 'https://github.com/bookbuster-ar/web-app-front',
     description: `E-commerce developed as the final project during the Henry Bootcamp. We created an e-commerce focused on the sale of books and user subscriptions.
-      It was a substantial challenge as I had to learn new technologies and work methodologies.
-      Bookbuster is a digital bookstore where users can register to purchase new and used books, audiobooks, and e-pub editions. The primary idea is to foster a community of reading enthusiasts. Users can leave book reviews, share memorable quotes, and engage with comments and likes on others' reviews and quotes. Additionally, users can organize their favorite and to-be-read books on different bookshelves.
-      Furthermore, since the company did not have an inventory management ERP, I took the initiative to create an administrator dashboard. This dashboard allows for various functions, including user management, transaction monitoring, and inventory control.`,
+        It was a substantial challenge as I had to learn new technologies and work methodologies.
+        Bookbuster is a digital bookstore where users can register to purchase new and used books, audiobooks, and e-pub editions. The primary idea is to foster a community of reading enthusiasts. Users can leave book reviews, share memorable quotes, and engage with comments and likes on others' reviews and quotes. Additionally, users can organize their favorite and to-be-read books on different bookshelves.
+        Furthermore, since the company did not have an inventory management ERP, I took the initiative to create an administrator dashboard. This dashboard allows for various functions, including user management, transaction monitoring, and inventory control.`,
     images: {
       cover:
         'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1697684459/pvogoqwfvqgro9mu5xvx.png',
@@ -132,7 +132,7 @@ export const projects: Projects[] = [
   },
   {
     id: 3,
-    title: 'DogApp',
+    title: 'Dog App',
     subtitle: 'Web application',
     images: {
       cover:
@@ -221,8 +221,7 @@ export const experience: Experience[] = [
         about4: `Integrated MercadoPago's React SDK for seamless payment processing on the platform.`,
         about5:
           'Leveraged Vite for fast development feedback and optimized bundle generation.',
-        about6:
-          'Employed Tailwind CSS for visually appealing and responsive UI design.',
+        about6: `Employed Tailwind CSS for visually appealing and responsive UI design.`,
         about7: `Contributed to the overall user experience by enhancing user authentication and interactions through Firebase.`,
       },
     ],
