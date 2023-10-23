@@ -65,20 +65,20 @@ const MobileMenu = () => {
               />
             </svg>
           </button>
-          <div class='flex justify-start mb-12'>
+          <div className='flex justify-start mb-12'>
             <a href='/en'>
               <img
                 src='https://freesvg.org/img/united_kingdom.png'
                 alt=''
-                class='w-[27px] h-[27px] relative top-1'
+                className='w-[27px] h-[27px] relative top-1'
               />
             </a>
-            <span class='mx-5'>|</span>
+            <span className='mx-5'>|</span>
             <a href='/es'>
               <img
                 src='https://icons.veryicon.com/png/Flag/Rounded%20World%20Flags/Spain%20Flag.png'
                 alt=''
-                class='w-[30px] h-[30px] relative top-0.5'
+                className='w-[30px] h-[30px] relative top-0.5'
               />
             </a>
           </div>

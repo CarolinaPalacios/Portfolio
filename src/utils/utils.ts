@@ -183,6 +183,43 @@ export const projects: Projects[] = [
       },
     ],
   },
+  {
+    id: 4,
+    title: 'Portfolio',
+    subtitle: { en: 'Personal portfolio', es: 'Portafolio personal' },
+    images: {
+      cover:
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1698038127/wfmqzjx1zdwtw3g5aji4.png',
+      secondImage:
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1698038127/owts8kazaxx0xnjft1ek.png',
+      thirdImage:
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1698038128/bmzxxiw8vt9s3glig1un.png',
+    },
+    description: {
+      en: 'My personal portfolio website',
+      es: 'Mi sitio web de portafolio personal',
+    },
+    github: 'https://github.com/CarolinaPalacios/portfolio',
+    url: 'https://carolina-palacios.vercel.app/en',
+    technologies: [
+      {
+        name: 'Typescript',
+        svg: 'https://www.svgrepo.com/show/349540/typescript.svg',
+      },
+      {
+        name: 'Astro',
+        svg: 'https://icon.icepanel.io/Technology/png-shadow-512/Astro.png',
+      },
+      {
+        name: 'Tailwind Css',
+        svg: 'https://www.svgrepo.com/show/374118/tailwind.svg',
+      },
+      {
+        name: 'React',
+        svg: 'https://www.svgrepo.com/show/452092/react.svg',
+      },
+    ],
+  },
 ];
 
 export const contacts: Contact[] = [
@@ -224,32 +261,32 @@ export const experience: Experience[] = [
     about: [
       {
         about1: {
-          en: 'Developed server and database components using Node.js, Express, and Sequelize for PostgreSQL integration.',
-          es: 'Desarrollé componentes de servidor y base de datos utilizando Node.js, Express y Sequelize para conectar con PostgreSQL.',
+          en: 'Developed server and database components utilizing Node.js, Express, and Sequelize to facilitate PostgreSQL integration.',
+          es: 'Desarrollé componentes de servidor y bases de datos utilizando Node.js, Express y Sequelize para lograr una integración con PostgreSQL.',
         },
         about2: {
-          en: 'Implemented MercadoPago as the payment gateway for secure online transactions.',
-          es: 'Implementé MercadoPago como pasarela de pagos para transacciones en línea seguras.',
+          en: 'Implemented MercadoPago as the payment gateway to ensure secure online transactions.',
+          es: 'Implementé MercadoPago como una pasarela de pago para garantizar la seguridad en las transacciones en línea.',
         },
         about3: {
-          en: 'Utilized Firebase for user authentication, ensuring platform security.',
-          es: 'Utilizamos Firebase para autenticación de usuario, asegurando la seguridad de la plataforma.',
+          en: 'Leveraged Firebase for user authentication, guaranteeing platform security.',
+          es: 'Empleamos Firebase para la autenticación de usuarios, asegurando así la seguridad de la plataforma.',
         },
         about4: {
-          en: `Integrated MercadoPago's React SDK for seamless payment processing on the platform.`,
-          es: 'Integramos el SDK de MercadoPago para un proceso de pago sencillo en la plataforma.',
+          en: `Integrated MercadoPago's React SDK to simplify the payment process on the platform.`,
+          es: 'Realizamos la integración del SDK de MercadoPago para simplificar el proceso de pago en la plataforma.',
         },
         about5: {
           en: 'Leveraged Vite for fast development feedback and optimized bundle generation.',
-          es: 'Utilizamos Vite para una retroalimentación de desarrollos rápidos y generación de bundles optimizados.',
+          es: 'Aprovechamos Vite para obtener una retroalimentación más rápida durante el desarrollo y generar bundles optimizados.',
         },
         about6: {
           en: `Employed Tailwind CSS for visually appealing and responsive UI design.`,
-          es: `Utilizamos Tailwind CSS para diseño de interfaces visuales atractivas y responsivas.`,
+          es: `Empleamos Tailwind CSS para diseñar interfaces visuales atractivas y completamente adaptables.`,
         },
         about7: {
           en: `Contributed to the overall user experience by enhancing user authentication and interactions through Firebase.`,
-          es: `Contribuí a la experiencia de usuario general al mejorar la autenticación de usuario y las interacciones a través de Firebase.`,
+          es: `Aporté a la experiencia del usuario al mejorar la autenticación de usuarios y las interacciones mediante el uso de Firebase.`,
         },
       },
     ],
