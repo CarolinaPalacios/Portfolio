@@ -13,7 +13,7 @@ const t = useTranslations(lang);
        <li class="flex items-center justify-center relative gap-2 rounded-xl overflow-hidden">
         <img src={contact.svg} alt={contact.name} class="w-14 h-30"/>
         <div class="flex flex-col justify-center">
-          <small class="dark:text-gray-400 text-gray-700 font-medium">{contact.text}</small>
+          <small class="dark:text-gray-400 text-gray-700 font-medium">{lang === 'es' ? contact.text.es : contact.text.en}</small>
           <a href={contact.link} class="desktop-lg:text-lg mobile-sm:text-sm font-bold dark:text-white text-black hover:underline decoration-1">{contact.name}</a>
         </div>
       </li>

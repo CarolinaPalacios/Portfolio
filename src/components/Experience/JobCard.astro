@@ -1,6 +1,10 @@
 ---
 import { Accordion } from '../Accordion';
 import type { Image, Technologies, About } from '../../utils/utils.ts';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
 
 
 interface Props {
@@ -33,27 +37,27 @@ const { title,
         <Accordion client:only="react">
         <div class='flex flex-col gap-2 mt-4'>
             <h2 class='text-xl font-bold dark:text-white text-black '>
-              About my role
+              {t('AboutRole')}
             </h2>
             <ul class='pl-5 text-base list-disc  space-y-3'>
               {about.map((a) => (
                 <>
-                  <li>{a.about1}</li>
-                  {a.about2 && <li>{a.about2}</li>}
-                  {a.about3 && <li>{a.about3}</li>}
-                  {a.about4 && <li>{a.about4}</li>}
-                  {a.about5 && <li>{a.about5}</li>}
-                  {a.about6 && <li>{a.about6}</li>}
-                  {a.about7 && <li>{a.about7}</li>}
-                  {a.about8 && <li>{a.about8}</li>}
-                  {a.about9 && <li>{a.about9}</li>}
-                  {a.about10 && <li>{a.about10}</li>}
+                  <li>{lang === 'es' ? a.about1.es : a.about1.en}</li>
+                  {a.about2 && <li>{lang === 'es' ? a.about2.es : a.about2.en}</li>}
+                  {a.about3 && <li>{lang === 'es' ? a.about3.es : a.about3.en}</li>}
+                  {a.about4 && <li>{lang === 'es' ? a.about4.es : a.about4.en}</li>}
+                  {a.about5 && <li>{lang === 'es' ? a.about5.es : a.about5.en}</li>}
+                  {a.about6 && <li>{lang === 'es' ? a.about6.es : a.about6.en}</li>}
+                  {a.about7 && <li>{lang === 'es' ? a.about7.es : a.about7.en}</li>}
+                  {a.about8 && <li>{lang  === 'es' ? a.about8.es : a.about8.en}</li>}
+                  {a.about9 && <li>{lang === 'es' ? a.about9.es : a.about9.en}</li>}
+                  {a.about10 && <li>{lang === 'es' ? a.about10.es : a.about10.en}</li>}
                 </>
               ))}
             </ul>
           </div>
           <div class='flex flex-col gap-2 mt-4'>
-            <h3 class='text-xl font-bold'>Technologies</h3>
+            <h3 class='text-xl font-bold'>{t('Technologies')}</h3>
             {
               <ul class='flex flex-wrap mb-0 gap-x-4 gap-y-2 text-light-texto-secondary dark:text-dark-texto-secondary '>
                 {technologies.map((tech) => (

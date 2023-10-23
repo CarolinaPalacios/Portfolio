@@ -21,9 +21,9 @@ const t = useTranslations(lang);
       <JobCard 
       title={title} 
       company={company} 
-      timeframe={timeframe} 
+      timeframe={lang === 'es' ? timeframe.es : timeframe.en} 
       image={image} 
-      description={description} 
+      description={lang === 'es' ? description.es : description.en} 
       about={about}
       technologies={technologies} 
       />

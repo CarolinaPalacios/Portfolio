@@ -13,12 +13,15 @@ export const projects: Projects[] = [
   {
     id: 1,
     title: 'Bookbuster',
-    subtitle: 'Library web application',
+    subtitle: { en: 'Library web application', es: 'Librería web' },
     extra: 'https://github.com/bookbuster-ar/web-app-front',
-    description: `E-commerce developed as the final project during the Henry Bootcamp. We created an e-commerce focused on the sale of books and user subscriptions.
+    description: {
+      en: `E-commerce developed as the final project during the Henry Bootcamp. We created an e-commerce focused on the sale of books and user subscriptions.
         It was a substantial challenge as I had to learn new technologies and work methodologies.
         Bookbuster is a digital bookstore where users can register to purchase new and used books, audiobooks, and e-pub editions. The primary idea is to foster a community of reading enthusiasts. Users can leave book reviews, share memorable quotes, and engage with comments and likes on others' reviews and quotes. Additionally, users can organize their favorite and to-be-read books on different bookshelves.
         Furthermore, since the company did not have an inventory management ERP, I took the initiative to create an administrator dashboard. This dashboard allows for various functions, including user management, transaction monitoring, and inventory control.`,
+      es: 'E-commerce desarrollado como proyecto final durante el Henry Bootcamp. Junto con mi equipo creamos una e-commerce enfocada en la venta de libros y suscripciones de usuarios. Fue un gran desafío ya que tuve que aprender nuevas tecnologías y metodologías de trabajo en un tiempo limitado. Bookbuster es una librería digital donde los usuarios pueden registrarse para comprar y alquilar libros nuevos y usados, comprar audiolibros y e-pub.La idea principal es fomentar una comunidad de entusiastas de la lectura. Los usuarios pueden dejar reseñas de libros, compartir citas memorables e interactuar con comentarios y me gusta en las reseñas y citas de otros. También, los usuarios pueden organizar sus libros favoritos y los que están por leer en diferentes estanterías. Como la empresa no contaba con un ERP de gestión de inventario, tomé la iniciativa de crear un dashboard de administrador. Este dashboard permite varias funciones, incluida la gestión de usuarios, el seguimiento de transacciones y el control de inventario.',
+    },
     images: {
       cover:
         'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1697684459/pvogoqwfvqgro9mu5xvx.png',
@@ -94,7 +97,7 @@ export const projects: Projects[] = [
   {
     id: 2,
     title: 'Rick And Morty WIKI',
-    subtitle: 'Web application',
+    subtitle: { en: 'Web application', es: 'Aplicación web' },
     images: {
       cover: '',
       secondImage: '',
@@ -102,7 +105,7 @@ export const projects: Projects[] = [
     },
     github: 'https://github.com/CarolinaPalacios/rick-and-morty-wiki',
     url: '',
-    description: '',
+    description: { en: '', es: '' },
     technologies: [
       {
         name: 'Typescript',
@@ -133,7 +136,7 @@ export const projects: Projects[] = [
   {
     id: 3,
     title: 'Dog App',
-    subtitle: 'Web application',
+    subtitle: { en: 'Web application', es: 'Aplicación web' },
     images: {
       cover:
         'https://res.cloudinary.com/dr4c4eqnr/image/upload/f_auto,q_auto/mmsjrokc7qk1zthtlipc',
@@ -145,8 +148,10 @@ export const projects: Projects[] = [
     video: 'https://www.youtube.com/embed/q_oiNJsLKXg',
     github: 'https://github.com/CarolinaPalacios/PI-Dogs',
     url: 'https://github.com/CarolinaPalacios/PI-Dogs',
-    description:
-      'I developed a single page application focused on the canine world, using The Dog API as a data source. This innovative app allows users to explore a wide variety of dog breeds, providing an interactive and engaging experience.',
+    description: {
+      en: 'I developed a single page application focused on the canine world, using The Dog API as a data source. This innovative app allows users to explore a wide variety of dog breeds, providing an interactive and engaging experience.',
+      es: 'Desarrollé una SPA enfocada en el mundo canino, utilizando The Dog API como fuente de datos. Esta innovadora aplicación permite a los usuarios explorar una gran variedad de razas de perros, brindando una experiencia interactiva y entretenida.',
+    },
     technologies: [
       {
         name: 'Javascript',
@@ -184,19 +189,19 @@ export const contacts: Contact[] = [
   {
     name: 'caaro.palacios@hotmail.com',
     svg: 'https://www.svgrepo.com/show/373951/outlook.svg',
-    text: 'Send me an email',
+    text: { en: 'Send me an email', es: 'Envíame un correo electrónico' },
     link: 'mailto:caaro.palacios@hotmail.com',
   },
   {
     name: '/CarolinaPalacios',
     svg: 'https://www.svgrepo.com/show/450156/github.svg',
-    text: 'GitHub Profile',
+    text: { en: 'GitHub Profile', es: 'Perfil de GitHub' },
     link: 'https://github.com/CarolinaPalacios',
   },
   {
     name: '/in/CarolinaPalacios1',
     svg: 'https://www.svgrepo.com/show/448234/linkedin.svg',
-    text: 'LinkedIn Profile',
+    text: { en: 'LinkedIn Profile', es: 'Perfil de LinkedIn' },
     link: 'https://www.linkedin.com/in/CarolinaPalacios1',
   },
 ];
@@ -205,24 +210,47 @@ export const experience: Experience[] = [
   {
     title: 'Bookbuster web application',
     company: 'Bookbuster',
-    timeframe: 'July 2023 - August 2023',
+    timeframe: {
+      en: 'July 2023 - August 2023',
+      es: 'Julio 2023 - Agosto 2023',
+    },
     image: {
       cover: '',
     },
-    description: `During my Back-End development internship, I worked with a team to build a robust MVP web application using Node.js, Express, Sequelize, PostgreSQL, Cloudinary, and Firebase for user authentication. I also integrated MercadoPago for secure online payments. The front end was built with React, Vite, Redux Toolkit, and Tailwind CSS for a responsive UI. This experience enhanced my skills and contributed to my growth as a developer.`,
+    description: {
+      en: `During my Back-End development internship, I worked with a team to build a robust MVP web application using Node.js, Express, Sequelize, PostgreSQL, Cloudinary, and Firebase for user authentication. I also integrated MercadoPago for secure online payments. The front end was built with React, Vite, Redux Toolkit, and Tailwind CSS for a responsive UI. This experience enhanced my skills and contributed to my growth as a developer.`,
+      es: 'Durante mi pasantía como Back-end developer, trabajé con mi equipo para construir una MVP robusta utilizando Node.js, Express, Sequelize, PostgreSQL, Cloudinary, y Firebase para autenticación de usuario. También integré MercadoPago para pagos en línea seguros. La interfaz se creó con React, Vite, Redux Toolkit y Tailwind CSS para una interfaz de usuario receptiva. Esta experiencia mejoró mis habilidades y contribuyó a mi crecimiento como desarrolladora.',
+    },
     about: [
       {
-        about1:
-          'Developed server and database components using Node.js, Express, and Sequelize for PostgreSQL integration.',
-        about2:
-          'Implemented MercadoPago as the payment gateway for secure online transactions.',
-        about3:
-          'Utilized Firebase for user authentication, ensuring platform security.',
-        about4: `Integrated MercadoPago's React SDK for seamless payment processing on the platform.`,
-        about5:
-          'Leveraged Vite for fast development feedback and optimized bundle generation.',
-        about6: `Employed Tailwind CSS for visually appealing and responsive UI design.`,
-        about7: `Contributed to the overall user experience by enhancing user authentication and interactions through Firebase.`,
+        about1: {
+          en: 'Developed server and database components using Node.js, Express, and Sequelize for PostgreSQL integration.',
+          es: 'Desarrollé componentes de servidor y base de datos utilizando Node.js, Express y Sequelize para conectar con PostgreSQL.',
+        },
+        about2: {
+          en: 'Implemented MercadoPago as the payment gateway for secure online transactions.',
+          es: 'Implementé MercadoPago como pasarela de pagos para transacciones en línea seguras.',
+        },
+        about3: {
+          en: 'Utilized Firebase for user authentication, ensuring platform security.',
+          es: 'Utilizamos Firebase para autenticación de usuario, asegurando la seguridad de la plataforma.',
+        },
+        about4: {
+          en: `Integrated MercadoPago's React SDK for seamless payment processing on the platform.`,
+          es: 'Integramos el SDK de MercadoPago para un proceso de pago sencillo en la plataforma.',
+        },
+        about5: {
+          en: 'Leveraged Vite for fast development feedback and optimized bundle generation.',
+          es: 'Utilizamos Vite para una retroalimentación de desarrollos rápidos y generación de bundles optimizados.',
+        },
+        about6: {
+          en: `Employed Tailwind CSS for visually appealing and responsive UI design.`,
+          es: `Utilizamos Tailwind CSS para diseño de interfaces visuales atractivas y responsivas.`,
+        },
+        about7: {
+          en: `Contributed to the overall user experience by enhancing user authentication and interactions through Firebase.`,
+          es: `Contribuí a la experiencia de usuario general al mejorar la autenticación de usuario y las interacciones a través de Firebase.`,
+        },
       },
     ],
     technologies: [

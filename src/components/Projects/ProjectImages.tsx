@@ -1,4 +1,7 @@
 import { useRef } from 'react';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+const lang = getLangFromUrl(new URL(window.location.href));
+const t = useTranslations(lang);
 import ImageCarousel from '../ImageCarousel';
 import type { Image, Technologies } from '../../utils/utils.ts';
 
@@ -134,7 +137,7 @@ const ProjectImages = ({
                   <path d='M15 4h5v5'></path>
                 </svg>
                 <span className='mobile-sm:hidden mobile-md:hidden'>
-                  Visit website
+                  {t('Website')}
                 </span>
               </a>
             </div>
@@ -152,7 +155,7 @@ const ProjectImages = ({
                 {description}
               </p>
               <div className='py-2 mobile-sm:w-32'>
-                Tecnologies:
+                {t('Technologies')}
                 <ul className='flex flex-wrap mb-0 gap-x-4 desktop-lg:gap-y-2 py-2'>
                   {technologies.map((technology) => (
                     <li className='flex items-center gap-2 text-sm '>

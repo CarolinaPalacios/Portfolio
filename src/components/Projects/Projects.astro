@@ -30,14 +30,14 @@ const lang = getLangFromUrl(Astro.url);
             <ProjectCard
               id={id}
               title={title}
-              subtitle={subtitle}
+              subtitle={lang === 'es' ? subtitle.es : subtitle.en}
               images={images}
               video={video}
               github={github}
               url={url}
               extra={extra}
               technologies={technologies}
-              description={description}
+              description={lang === 'es' ? description.es : description.en}
             />
           ),
         )
