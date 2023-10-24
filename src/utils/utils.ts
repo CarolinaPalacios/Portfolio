@@ -24,17 +24,17 @@ export const projects: Projects[] = [
     },
     images: {
       cover:
-        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1697684459/pvogoqwfvqgro9mu5xvx.png',
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1698108138/ql5fvtodcpghdmdj1hxu.png',
       secondImage:
-        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1697684511/lyxhcefsqsyoasbi9gfg.png',
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1698108137/mkpokl3zrt0454g7wu6c.png',
       thirdImage:
-        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1697684520/mu5zqhykssxcjnmc36zx.png',
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1698108136/ifpcgr5xgyqujcaomile.png',
       fourthImage:
-        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1697684511/qffpuqezqfxnuumm9ehz.png',
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1698108138/khvewispabqnjqgga5ub.png',
       fifthImage:
-        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1697684521/dykni5thbmud6iij8owv.png',
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1698108138/wexbjrfoihkig2gjjorn.png',
       sixthImage:
-        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1697684524/jnqbgqsnwgdqw5rv2huz.png',
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1698108139/hdzrur09c8hmqkqllo9i.png',
     },
     url: 'https://bookbuster-ar.vercel.app/',
     github: 'https://github.com/bookbuster-ar/web-app-backend',
@@ -139,11 +139,11 @@ export const projects: Projects[] = [
     subtitle: { en: 'Web application', es: 'Aplicación web' },
     images: {
       cover:
-        'https://res.cloudinary.com/dr4c4eqnr/image/upload/f_auto,q_auto/mmsjrokc7qk1zthtlipc',
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1698107688/y6gitqo5uxveeyt3uwmg.png',
       secondImage:
-        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1697684523/jkl3j0k2zg31zcpu8nwa.png',
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1698107686/vho8ghjqeko45decdtsd.png',
       thirdImage:
-        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1697684518/yuip2gzthapdl0vtuf5i.png',
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1698107684/ysonlra0drgd4944jhkv.png',
     },
     video: 'https://www.youtube.com/embed/q_oiNJsLKXg',
     github: 'https://github.com/CarolinaPalacios/PI-Dogs',
