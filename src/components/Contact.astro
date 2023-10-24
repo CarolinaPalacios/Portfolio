@@ -6,15 +6,15 @@ const t = useTranslations(lang);
 ---
 
 <section class='flex flex-col sm:w-full w-[90%] gap-12 py-10'>
-  <h1 class='flex desktop-lg:text-6xl tablet-md:text-4xl mobile-md:text-3xl mobile-sm:text-3xl font-extrabold '>{t('Contact')}</h1>
+  <h1 class='flex desktop-lg:text-6xl tablet-md:text-4xl mobile-md:text-3xl mobile-sm:text-3xl font-extrabold mobile-xs:text-2xl'>{t('Contact')}</h1>
    <ul class='flex flex-wrap items-center justify-start gap-8 list-none lg:justify-center'>
      {
      contacts.map((contact) => (
-       <li class="flex items-center justify-center relative gap-2 rounded-xl overflow-hidden">
-        <img src={contact.svg} alt={contact.name} class="w-14 h-30"/>
+       <li class="flex items-center justify-center relative gap-2 rounded-xl ">
+        <img src={contact.svg} alt={contact.name} class="w-14 h-30 mobile-sm:w-10 mobile-sm:h-10 mobile-xs:w-7 mobile-xs:h-7"/>
         <div class="flex flex-col justify-center">
           <small class="dark:text-gray-400 text-gray-700 font-medium">{lang === 'es' ? contact.text.es : contact.text.en}</small>
-          <a href={contact.link} class="desktop-lg:text-lg mobile-sm:text-sm font-bold dark:text-white text-black hover:underline decoration-1">{contact.name}</a>
+          <a href={contact.link} class="desktop-lg:text-lg mobile-sm:text-sm mobile-xs:text-xs font-bold dark:text-white text-black hover:underline decoration-1">{contact.name}</a>
         </div>
       </li>
       ))

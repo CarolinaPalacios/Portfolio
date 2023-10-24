@@ -18,7 +18,7 @@ const ImageCarousel = ({ images, video, title }: Props) => {
   const NextArrow = ({ onClick }: { onClick: MouseEventHandler }) => {
     return (
       <div
-        className='text-3xl text-redbook absolute z-10 cursor-pointer -right-10 top-[50%] mobile-md:-right-5 tablet-md:-right-1'
+        className='text-3xl text-redbook absolute z-10 cursor-pointer -right-10 top-[50%] mobile-xs:-right-6 mobile-md:-right-5 tablet-md:-right-1'
         onClick={onClick}
       >
         <svg
@@ -44,7 +44,7 @@ const ImageCarousel = ({ images, video, title }: Props) => {
   const PrevArrow = ({ onClick }: { onClick: MouseEventHandler }) => {
     return (
       <div
-        className='text-3xl text-redbook absolute z-10 cursor-pointer -left-5 top-[50%]'
+        className='text-3xl text-redbook absolute z-10 cursor-pointer -left-5 top-[50%] mobile-xs:-left-6'
         onClick={onClick}
       >
         <svg
@@ -67,8 +67,11 @@ const ImageCarousel = ({ images, video, title }: Props) => {
       </div>
     );
   };
+
+  const isMobileXS = window.innerWidth >= 0 && window.innerWidth <= 359;
+
   const settings = {
-    dots: true,
+    dots: !isMobileXS ? true : false,
     fade: true,
     infinite: true,
     speed: 500,
@@ -89,7 +92,7 @@ const ImageCarousel = ({ images, video, title }: Props) => {
               'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1697684509/etrttzuquplxxgy8ncnv.svg'
             }
             alt={title}
-            className='h-[500px] w-[650px] mobile-sm:w-[240px] mobile-sm:h-[240px] tablet-md:h-[500px] tablet-md:w-[550px]'
+            className='h-[500px] w-[650px] mobile-xs:w-[200px] mobile-xs:h-[200px] mobile-sm:w-[240px] mobile-sm:h-[240px] tablet-md:h-[500px] tablet-md:w-[550px]'
           />
         </div>
         {images.secondImage && (
@@ -97,7 +100,7 @@ const ImageCarousel = ({ images, video, title }: Props) => {
             <img
               src={images.secondImage}
               alt={title}
-              className='h-[500px] w-[650px] mobile-sm:w-[240px] mobile-sm:h-[240px] tablet-md:h-[500px] tablet-md:w-[550px]'
+              className='h-[500px] w-[650px] mobile-xs:w-[200px] mobile-xs:h-[200px] mobile-sm:w-[240px] mobile-sm:h-[240px] tablet-md:h-[500px] tablet-md:w-[550px]'
             />
           </div>
         )}
@@ -106,7 +109,7 @@ const ImageCarousel = ({ images, video, title }: Props) => {
             <img
               src={images.thirdImage}
               alt={title}
-              className='h-[500px] w-[650px] mobile-sm:w-[240px] mobile-sm:h-[240px] tablet-md:h-[500px] tablet-md:w-[550px]'
+              className='h-[500px] w-[650px] mobile-xs:w-[200px] mobile-xs:h-[200px] mobile-sm:w-[240px] mobile-sm:h-[240px] tablet-md:h-[500px] tablet-md:w-[550px]'
             />
           </div>
         )}
@@ -115,7 +118,7 @@ const ImageCarousel = ({ images, video, title }: Props) => {
             <img
               src={images.fourthImage}
               alt={title}
-              className='h-[500px] w-[650px] mobile-sm:w-[240px] mobile-sm:h-[240px] tablet-md:h-[500px] tablet-md:w-[550px]'
+              className='h-[500px] w-[650px] mobile-xs:w-[200px] mobile-xs:h-[200px] mobile-sm:w-[240px] mobile-sm:h-[240px] tablet-md:h-[500px] tablet-md:w-[550px]'
             />
           </div>
         )}
@@ -124,7 +127,7 @@ const ImageCarousel = ({ images, video, title }: Props) => {
             <img
               src={images.fifthImage}
               alt={title}
-              className='h-[500px] w-[650px] mobile-sm:w-[240px] mobile-sm:h-[240px] tablet-md:h-[500px] tablet-md:w-[550px]'
+              className='h-[500px] w-[650px] mobile-xs:w-[200px] mobile-xs:h-[200px] mobile-sm:w-[240px] mobile-sm:h-[240px] tablet-md:h-[500px] tablet-md:w-[550px]'
             />
           </div>
         )}
@@ -133,7 +136,7 @@ const ImageCarousel = ({ images, video, title }: Props) => {
             <img
               src={images.sixthImage}
               alt={title}
-              className='h-[500px] w-[650px] mobile-sm:w-[240px] mobile-sm:h-[240px] tablet-md:h-[500px] tablet-md:w-[550px]'
+              className='h-[500px] w-[650px] mobile-xs:w-[200px] mobile-xs:h-[200px] mobile-sm:w-[240px] mobile-sm:h-[240px] tablet-md:h-[500px] tablet-md:w-[550px]'
             />
           </div>
         )}

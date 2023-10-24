@@ -45,7 +45,7 @@ const MobileMenu = () => {
         </svg>
       </button>
       {mobileMenuOpen && (
-        <div className='lg:hidden absolute top-0 left-0 w-full h-screen bg-white dark:bg-[#252525] flex flex-col items-center justify-center duration-500 transition-all text-xl font-medium'>
+        <div className='lg:hidden absolute top-0 left-0 w-full h-screen bg-white dark:bg-[#252525] flex flex-col items-center justify-center duration-500 transition-all text-xl font-medium mobile-xs:text-lg'>
           <button
             onClick={() => setMobileMenuOpen(false)}
             className='absolute top-5 left-5 text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white focus:outline-none'

@@ -33,13 +33,13 @@ const { title,
       <span class='mt-1 text-base font-medium dark:text-white text-black'>
         {timeframe}
       </span>
-      <p class='text-base mt-2'>{description}</p>
+      <p class='text-base mt-2 mobile-xs:text-sm'>{description}</p>
         <Accordion client:only="react">
         <div class='flex flex-col gap-2 mt-4'>
             <h2 class='text-xl font-bold dark:text-white text-black '>
               {t('AboutRole')}
             </h2>
-            <ul class='pl-5 text-base list-disc  space-y-3'>
+            <ul class='pl-5 text-base mobile-xs:text-sm list-disc  space-y-3'>
               {about.map((a) => (
                 <>
                   <li>{lang === 'es' ? a.about1.es : a.about1.en}</li>
@@ -59,9 +59,9 @@ const { title,
           <div class='flex flex-col gap-2 mt-4'>
             <h3 class='text-xl font-bold'>{t('Technologies')}</h3>
             {
-              <ul class='flex flex-wrap mb-0 gap-x-4 gap-y-2 text-light-texto-secondary dark:text-dark-texto-secondary '>
+              <ul class='flex flex-wrap mb-0 gap-x-4 gap-y-2'>
                 {technologies.map((tech) => (
-                  <li class='flex items-center gap-2 text-sm dark:text-secondaryBText text-secondaryWText'>
+                  <li class='flex items-center gap-2 text-base mobile-xs:text-sm'>
                     <img src={tech.svg} class='h-6 w-6 ' alt={tech.name} />
                     {tech.name}
                   </li>

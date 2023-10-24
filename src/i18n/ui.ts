@@ -39,7 +39,7 @@ export const ui = {
     Me apasiona colaborar con equipos con visión al futuro que se dedican al crecimiento personal y comparten un objetivo común: aprovechar nuestras habilidades para crear un impacto positivo a través de productos y servicios innovadores.
     No se trata sólo de escribir código; se trata de utilizar la tecnología como fuerza de cambio. Estoy comprometida a impulsar el progreso, resolver problemas del mundo real y marcar la diferencia en el panorama digital.
     Si estás buscando un desarrollador web Full Stack dedicado con una habilidad especial para la resolución creativa de problemas, conectemos y exploremos cómo podemos generar un impacto juntos.`,
-    HomeText: 'Desarrolladora con pasión por la',
+    HomeText: 'Developer con pasión por la',
     AboutRole: 'Sobre mi puesto',
     Typewriter1: 'creatividad',
     Typewriter2: 'innovación',
