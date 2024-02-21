@@ -1,19 +1,19 @@
-import { useRef } from 'react';
-import { getLangFromUrl, useTranslations } from '../../i18n/utils';
-const lang = getLangFromUrl(new URL(window.location.href));
-const t = useTranslations(lang);
-import ImageCarousel from '../ImageCarousel';
-import type { Image, Technologies } from '../../utils/utils.ts';
+import { useRef } from 'react'
+import { getLangFromUrl, useTranslations } from '../../i18n/utils'
+const lang = getLangFromUrl(new URL(window.location.href))
+const t = useTranslations(lang)
+import ImageCarousel from '../ImageCarousel'
+import type { Image, Technologies } from '../../utils/utils.ts'
 
 interface Props {
-  images: Image;
-  title: string;
-  video?: string;
-  extra?: string;
-  github: string;
-  url: string;
-  technologies: Technologies[];
-  description: string;
+  images: Image
+  title: string
+  video?: string
+  extra?: string
+  github: string
+  url: string
+  technologies: Technologies[]
+  description: string
 }
 const ProjectImages = ({
   images,
@@ -26,19 +26,19 @@ const ProjectImages = ({
   video,
 }: Props) => {
   const dialogRef: React.MutableRefObject<HTMLDialogElement | null> =
-    useRef(null);
+    useRef(null)
 
   const handleClick = () => {
     if (dialogRef.current !== null) {
-      dialogRef.current.showModal();
+      dialogRef.current.showModal()
     }
-  };
+  }
 
   const handleCloseModal = () => {
     if (dialogRef.current !== null) {
-      dialogRef.current.close();
+      dialogRef.current.close()
     }
-  };
+  }
 
   return (
     <div>
@@ -61,7 +61,7 @@ const ProjectImages = ({
       </div>
       <dialog
         ref={dialogRef}
-        className='dark:text-white dark:bg-[#4e4e4e] bg-[#F5F5F5] w-[90%] h-fit rounded-md'
+        className='dark:text-white dark:bg-[#4e4e4e] bg-[#F5F5F5] w-[85%] h-[65%] rounded-md'
       >
         <div className='flex flex-row mobile-xs:flex-col mobile-sm:flex-col mobile-md:flex-col gap-4 px-4 bg-[#F5F5F5] dark:bg-[#4e4e4e63]'>
           <div className='w-full sm:w-2/3 mobile-xs:h-44 mobile-sm:w-64 mobile-md:w-full mobile-sm:h-80 mobile-sm:mt-0 mt-5'>
@@ -153,7 +153,7 @@ const ProjectImages = ({
                   {extra}
                 </a>
               )}
-              <p className='text-[#252525] dark:text-[#CCCCCC] text-[0.91rem] mobile-xs:w-48 mobile-xs:overflow-y-auto mobile-xs:max-h-[180px] mobile-sm:w-72 desktop-lg:w-80 pr-5 desktop-lg:overflow-y-auto tablet-md:overflow-y-auto tablet-md:max-h-[100px] desktop-lg:max-h-[150px]'>
+              <p className='text-[#252525] dark:text-[#CCCCCC] text-[0.91rem] mobile-xs:w-48 mobile-xs:overflow-y-auto mobile-xs:max-h-[180px] mobile-sm:w-72 desktop-lg:w-auto pr-5 desktop-lg:overflow-y-auto tablet-md:overflow-y-auto tablet-md:max-h-[100px] desktop-lg:max-h-[150px]'>
                 {description}
               </p>
               <div className='py-2 mobile-sm:w-32 mobile-xs:w-32 mobile-xs:text-sm'>
@@ -172,7 +172,7 @@ const ProjectImages = ({
         </div>
       </dialog>
     </div>
-  );
-};
+  )
+}
 
-export default ProjectImages;
+export default ProjectImages

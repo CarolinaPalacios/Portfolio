@@ -1,19 +1,19 @@
-import { useState, type MouseEventHandler } from 'react';
-import Slider from 'react-slick';
+import { useState, type MouseEventHandler } from 'react'
+import Slider from 'react-slick'
 
-import type { Image } from '../utils/utils';
+import type { Image } from '../utils/utils'
 
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
 
 interface Props {
-  images: Image;
-  title: string;
-  video?: string;
+  images: Image
+  title: string
+  video?: string
 }
 
 const ImageCarousel = ({ images, video, title }: Props) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0)
 
   const NextArrow = ({ onClick }: { onClick: MouseEventHandler }) => {
     return (
@@ -39,8 +39,8 @@ const ImageCarousel = ({ images, video, title }: Props) => {
           <path d='M13 6l6 6'></path>
         </svg>
       </div>
-    );
-  };
+    )
+  }
   const PrevArrow = ({ onClick }: { onClick: MouseEventHandler }) => {
     return (
       <div
@@ -65,10 +65,10 @@ const ImageCarousel = ({ images, video, title }: Props) => {
           <path d='M5 12l6 -6'></path>
         </svg>
       </div>
-    );
-  };
+    )
+  }
 
-  const isMobileXS = window.innerWidth >= 0 && window.innerWidth <= 359;
+  const isMobileXS = window.innerWidth >= 0 && window.innerWidth <= 359
 
   const settings = {
     dots: !isMobileXS ? true : false,
@@ -81,69 +81,69 @@ const ImageCarousel = ({ images, video, title }: Props) => {
     nextArrow: <NextArrow onClick={() => setCurrentIndex(currentIndex + 1)} />,
     prevArrow: <PrevArrow onClick={() => setCurrentIndex(currentIndex - 1)} />,
     beforeChange: (current: number, next: number) => setCurrentIndex(next),
-  };
+  }
   return (
-    <div className='desktop-lg:mr-16'>
+    <div className='desktop-lg:mr-20'>
       <Slider {...settings}>
-        <div className='relative desktop-lg:left-5 mobile-md:left-3 mobile-sm:top-16 mobile-sm:left-4'>
+        <div className='relative desktop-lg:left-14 mobile-md:left-3 mobile-sm:top-16 mobile-sm:left-4'>
           <img
             src={
               images.cover ||
               'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1697684509/etrttzuquplxxgy8ncnv.svg'
             }
             alt={title}
-            className='h-[500px] w-[650px] mobile-xs:w-[200px] mobile-xs:h-[200px] mobile-sm:w-[240px] mobile-sm:h-[240px] tablet-md:h-[500px] tablet-md:w-[550px]'
+            className='h-[550px] w-[850px] mobile-xs:w-[200px] mobile-xs:h-[200px] mobile-sm:w-[240px] mobile-sm:h-[240px] tablet-md:h-[500px] tablet-md:w-[550px]'
           />
         </div>
         {images.secondImage && (
-          <div className='relative desktop-lg:left-5 mobile-md:left-3 mobile-sm:top-16 mobile-sm:left-4'>
+          <div className='relative desktop-lg:left-14 mobile-md:left-3 mobile-sm:top-16 mobile-sm:left-4'>
             <img
               src={images.secondImage}
               alt={title}
-              className='h-[500px] w-[650px] mobile-xs:w-[200px] mobile-xs:h-[200px] mobile-sm:w-[240px] mobile-sm:h-[240px] tablet-md:h-[500px] tablet-md:w-[550px]'
+              className='h-[550px] w-[850px] mobile-xs:w-[200px] mobile-xs:h-[200px] mobile-sm:w-[240px] mobile-sm:h-[240px] tablet-md:h-[500px] tablet-md:w-[550px]'
             />
           </div>
         )}
         {images.thirdImage && (
-          <div className='relative desktop-lg:left-5 mobile-md:left-3 mobile-sm:top-16 mobile-sm:left-4'>
+          <div className='relative desktop-lg:left-14 mobile-md:left-3 mobile-sm:top-16 mobile-sm:left-4'>
             <img
               src={images.thirdImage}
               alt={title}
-              className='h-[500px] w-[650px] mobile-xs:w-[200px] mobile-xs:h-[200px] mobile-sm:w-[240px] mobile-sm:h-[240px] tablet-md:h-[500px] tablet-md:w-[550px]'
+              className='h-[550px] w-[850px] mobile-xs:w-[200px] mobile-xs:h-[200px] mobile-sm:w-[240px] mobile-sm:h-[240px] tablet-md:h-[500px] tablet-md:w-[550px]'
             />
           </div>
         )}
         {images.fourthImage && (
-          <div className='relative desktop-lg:left-5 mobile-md:left-3 mobile-sm:top-16 mobile-sm:left-4'>
+          <div className='relative desktop-lg:left-14 mobile-md:left-3 mobile-sm:top-16 mobile-sm:left-4'>
             <img
               src={images.fourthImage}
               alt={title}
-              className='h-[500px] w-[650px] mobile-xs:w-[200px] mobile-xs:h-[200px] mobile-sm:w-[240px] mobile-sm:h-[240px] tablet-md:h-[500px] tablet-md:w-[550px]'
+              className='h-[550px] w-[850px] mobile-xs:w-[200px] mobile-xs:h-[200px] mobile-sm:w-[240px] mobile-sm:h-[240px] tablet-md:h-[500px] tablet-md:w-[550px]'
             />
           </div>
         )}
         {images.fifthImage && (
-          <div className='relative desktop-lg:left-5 mobile-md:left-3 mobile-sm:top-16 mobile-sm:left-4'>
+          <div className='relative desktop-lg:left-14 mobile-md:left-3 mobile-sm:top-16 mobile-sm:left-4'>
             <img
               src={images.fifthImage}
               alt={title}
-              className='h-[500px] w-[650px] mobile-xs:w-[200px] mobile-xs:h-[200px] mobile-sm:w-[240px] mobile-sm:h-[240px] tablet-md:h-[500px] tablet-md:w-[550px]'
+              className='h-[550px] w-[850px] mobile-xs:w-[200px] mobile-xs:h-[200px] mobile-sm:w-[240px] mobile-sm:h-[240px] tablet-md:h-[500px] tablet-md:w-[550px]'
             />
           </div>
         )}
         {images.sixthImage && (
-          <div className='relative desktop-lg:left-5 mobile-md:left-3 mobile-sm:top-16 mobile-sm:left-4'>
+          <div className='relative desktop-lg:left-14 mobile-md:left-3 mobile-sm:top-16 mobile-sm:left-4'>
             <img
               src={images.sixthImage}
               alt={title}
-              className='h-[500px] w-[650px] mobile-xs:w-[200px] mobile-xs:h-[200px] mobile-sm:w-[240px] mobile-sm:h-[240px] tablet-md:h-[500px] tablet-md:w-[550px]'
+              className='h-[550px] w-[850px] mobile-xs:w-[200px] mobile-xs:h-[200px] mobile-sm:w-[240px] mobile-sm:h-[240px] tablet-md:h-[500px] tablet-md:w-[550px]'
             />
           </div>
         )}
         {video && (
           <div className='relative desktop-lg:left-5 mobile-md:left-2 mobile-sm:top-16 mobile-sm:left-4'>
             <iframe
-              className='desktop-lg:h-[500px] desktop-lg:w-full mobile-md:w-full mobile-md:h-[500px] mobile-sm:w-full mobile-sm:h-[240px] tablet-md:h-[500px] tablet-md:w-[550px]'
+              className='desktop-lg:h-[550px] desktop-lg:w-full mobile-md:w-full mobile-md:h-[500px] mobile-sm:w-full mobile-sm:h-[240px] tablet-md:h-[500px] tablet-md:w-[550px]'
               src={video}
               title={title}
               allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
@@ -153,7 +153,7 @@ const ImageCarousel = ({ images, video, title }: Props) => {
         )}
       </Slider>
     </div>
-  );
-};
+  )
+}
 
-export default ImageCarousel;
+export default ImageCarousel

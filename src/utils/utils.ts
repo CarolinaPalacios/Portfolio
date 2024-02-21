@@ -5,9 +5,9 @@ import type {
   Experience,
   About,
   Image,
-} from '../utils/utils.d';
+} from '../utils/utils.d'
 
-export type { Projects, Technologies, Contact, Experience, About, Image };
+export type { Projects, Technologies, Contact, Experience, About, Image }
 
 export const projects: Projects[] = [
   {
@@ -96,6 +96,183 @@ export const projects: Projects[] = [
   },
   {
     id: 2,
+    title: 'Discord Clone',
+    subtitle: {
+      en: 'Discord clone web application',
+      es: 'Aplicación web de clon de Discord',
+    },
+    description: {
+      en: `I developed a Discord clone using cutting-edge technologies like Nx, NestJS, React, and GraphQL. The project showcases my skills in creating real-time chat environments with features similar to Discord. Key highlights include Monorepo management, secure JWT authentication with Clerk, and integration of Livekit for high-quality real-time chat. The application includes features such as server creation, roles, permissions, and a robust WebSocket-based chat system.`,
+      es: 'Desarrollé un clon de Discord utilizando tecnologías de vanguardia como Nx, NestJS, React y GraphQL. El proyecto muestra mis habilidades en la creación de entornos de chat en tiempo real con características similares a Discord. Los aspectos más destacados incluyen la gestión de Monorepo, la autenticación segura JWT con Clerk y la integración de Livekit para chat en tiempo real de alta calidad. La aplicación incluye características como creación de servidores, roles, permisos y un robusto sistema de chat basado en WebSocket.',
+    },
+    images: {
+      cover:
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1708444728/mbhcohlose5v4feyb7g6.png',
+      secondImage:
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1708444728/ddmvuovyvclzpgrtzwbz.png',
+      thirdImage:
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1708444729/lwe61awdzjqczb45qhqn.png',
+      fourthImage:
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1708444728/vwt3rw3y1ffj9ohu5mbs.png',
+      fifthImage:
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1708444728/jejwd4zrwn1epe5glyuc.png',
+      sixthImage:
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1708444728/omix44zxiwau2x9oxt9q.png',
+    },
+    url: 'https://github.com/CarolinaPalacios/discord-clone',
+    github: 'https://github.com/CarolinaPalacios/discord-clone',
+    technologies: [
+      {
+        name: 'React',
+        svg: 'https://www.svgrepo.com/show/452092/react.svg',
+      },
+      {
+        name: 'Vite',
+        svg: 'https://www.svgrepo.com/show/374167/vite.svg',
+      },
+      {
+        name: 'Zustand',
+        svg: 'https://www.svgrepo.com/show/395866/bear.svg',
+      },
+      {
+        name: 'Nx',
+        svg: 'https://raw.githubusercontent.com/nrwl/nx/master/nx-logo.png',
+      },
+      {
+        name: 'TypeScript',
+        svg: 'https://www.svgrepo.com/show/349540/typescript.svg',
+      },
+      {
+        name: 'NestJS',
+        svg: 'https://www.svgrepo.com/show/373872/nestjs.svg',
+      },
+      {
+        name: 'GraphQL',
+        svg: 'https://www.svgrepo.com/show/373644/graphql.svg',
+      },
+      {
+        name: 'PostgreSQL',
+        svg: 'https://www.svgrepo.com/show/354200/postgresql.svg',
+      },
+      {
+        name: 'Prisma',
+        svg: 'https://www.svgrepo.com/show/373776/light-prisma.svg',
+      },
+      {
+        name: 'Swagger',
+        svg: 'https://www.svgrepo.com/show/354420/swagger.svg',
+      },
+      {
+        name: 'Cypress',
+        svg: 'https://www.svgrepo.com/show/373542/cypress.svg',
+      },
+      {
+        name: 'Jest',
+        svg: 'https://www.svgrepo.com/show/353930/jest.svg',
+      },
+      {
+        name: 'WebSocket',
+        svg: 'https://www.svgrepo.com/show/354553/websocket.svg',
+      },
+      {
+        name: 'Docker',
+        svg: 'https://www.svgrepo.com/show/373553/docker.svg',
+      },
+      {
+        name: 'Apollo',
+        svg: 'https://raw.githubusercontent.com/apollographql/apollo-client-devtools/main/assets/apollo-wordmark.svg',
+      },
+      {
+        name: 'Docker',
+        svg: 'https://www.svgrepo.com/show/373553/docker.svg',
+      },
+      {
+        name: 'GitHub',
+        svg: 'https://www.svgrepo.com/show/521688/github.svg',
+      },
+      {
+        name: 'Git',
+        svg: 'https://www.svgrepo.com/show/452210/git.svg',
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: 'Tetris',
+    subtitle: { en: 'Tetris game', es: 'Juego de Tetris' },
+    images: {
+      cover:
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1708489750/l6mfjtx0mseqhghpsg7v.png',
+      secondImage:
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1708489751/i3xi8u4oqly3tn9rjvv6.png',
+      thirdImage:
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1708489751/y46xgejisv3abdnacnor.png',
+    },
+    description: {
+      en: 'I developed a fully functional Tetris game using web technologies such as JavaScript, HTML, and CSS. The main goal was to recreate the classic Tetris experience with a focus on modularity and object-oriented structure. The game features all the expected characteristics of a traditional Tetris game, including piece movement, rotation, line clearing, scoring, difficulty levels, and background music. I implemented efficient algorithms for the game logic and collision detection.',
+      es: `Desarrollé un juego de Tetris completamente funcional utilizando tecnologías web como JavaScript, HTML y CSS. El objetivo principal fue recrear la experiencia clásica del Tetris con un enfoque en la modularidad y la estructura orientada a objetos. El juego cuenta con todas las características esperadas de un Tetris tradicional, incluyendo el movimiento de las piezas, rotación, eliminación de filas, puntuación, niveles de dificultad y música de fondo. Implementé algoritmos eficientes para la lógica del juego y la detección de colisiones.`,
+    },
+    github: 'https://github.com/CarolinaPalacios/tetris',
+    url: 'https://carolinapalacios.github.io/tetris/',
+    technologies: [
+      {
+        name: 'JavaScript',
+        svg: 'https://www.svgrepo.com/show/349419/javascript.svg',
+      },
+      {
+        name: 'HTML',
+        svg: 'https://www.svgrepo.com/show/452228/html-5.svg',
+      },
+      {
+        name: 'CSS',
+        svg: 'https://www.svgrepo.com/show/452185/css-3.svg',
+      },
+      {
+        name: 'GitHub',
+        svg: 'https://www.svgrepo.com/show/521688/github.svg',
+      },
+    ],
+  },
+
+  {
+    id: 4,
+    title: 'Portfolio',
+    subtitle: { en: 'Personal portfolio', es: 'Portafolio personal' },
+    images: {
+      cover:
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1698038127/wfmqzjx1zdwtw3g5aji4.png',
+      secondImage:
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1698038127/owts8kazaxx0xnjft1ek.png',
+      thirdImage:
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1698038128/bmzxxiw8vt9s3glig1un.png',
+    },
+    description: {
+      en: 'My personal portfolio website',
+      es: 'Mi sitio web de portafolio personal',
+    },
+    github: 'https://github.com/CarolinaPalacios/portfolio',
+    url: 'https://carolina-palacios.vercel.app/en',
+    technologies: [
+      {
+        name: 'Typescript',
+        svg: 'https://www.svgrepo.com/show/349540/typescript.svg',
+      },
+      {
+        name: 'Astro',
+        svg: 'https://icon.icepanel.io/Technology/png-shadow-512/Astro.png',
+      },
+      {
+        name: 'Tailwind Css',
+        svg: 'https://www.svgrepo.com/show/374118/tailwind.svg',
+      },
+      {
+        name: 'React',
+        svg: 'https://www.svgrepo.com/show/452092/react.svg',
+      },
+    ],
+  },
+  {
+    id: 6,
     title: 'Rick And Morty WIKI',
     subtitle: { en: 'Web application', es: 'Aplicación web' },
     images: {
@@ -134,7 +311,7 @@ export const projects: Projects[] = [
     ],
   },
   {
-    id: 3,
+    id: 7,
     title: 'Dog App',
     subtitle: { en: 'Web application', es: 'Aplicación web' },
     images: {
@@ -183,44 +360,7 @@ export const projects: Projects[] = [
       },
     ],
   },
-  {
-    id: 4,
-    title: 'Portfolio',
-    subtitle: { en: 'Personal portfolio', es: 'Portafolio personal' },
-    images: {
-      cover:
-        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1698038127/wfmqzjx1zdwtw3g5aji4.png',
-      secondImage:
-        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1698038127/owts8kazaxx0xnjft1ek.png',
-      thirdImage:
-        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1698038128/bmzxxiw8vt9s3glig1un.png',
-    },
-    description: {
-      en: 'My personal portfolio website',
-      es: 'Mi sitio web de portafolio personal',
-    },
-    github: 'https://github.com/CarolinaPalacios/portfolio',
-    url: 'https://carolina-palacios.vercel.app/en',
-    technologies: [
-      {
-        name: 'Typescript',
-        svg: 'https://www.svgrepo.com/show/349540/typescript.svg',
-      },
-      {
-        name: 'Astro',
-        svg: 'https://icon.icepanel.io/Technology/png-shadow-512/Astro.png',
-      },
-      {
-        name: 'Tailwind Css',
-        svg: 'https://www.svgrepo.com/show/374118/tailwind.svg',
-      },
-      {
-        name: 'React',
-        svg: 'https://www.svgrepo.com/show/452092/react.svg',
-      },
-    ],
-  },
-];
+]
 
 export const contacts: Contact[] = [
   {
@@ -241,7 +381,7 @@ export const contacts: Contact[] = [
     text: { en: 'LinkedIn Profile', es: 'Perfil de LinkedIn' },
     link: 'https://www.linkedin.com/in/CarolinaPalacios1',
   },
-];
+]
 
 export const experience: Experience[] = [
   {
@@ -361,4 +501,4 @@ export const experience: Experience[] = [
       },
     ],
   },
-];
+]
