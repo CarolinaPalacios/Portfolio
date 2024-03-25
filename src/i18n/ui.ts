@@ -1,9 +1,9 @@
 export const languages = {
   en: 'English',
   es: 'Español',
-};
+}
 
-export const defaultLang = 'en';
+export const defaultLang = 'en'
 
 export const ui = {
   en: {
@@ -25,8 +25,10 @@ export const ui = {
     ContactButton: 'Contact now',
     CV: 'Download CV',
     Website: 'Visit website',
-    Technologies: 'Tecnologies',
+    Technologies: 'Technologies',
     Footer: 'This portfolio was developed with:',
+    SeeMore: 'See more',
+    SeeLess: 'See less',
   },
   es: {
     Home: 'Inicio',
@@ -49,5 +51,7 @@ export const ui = {
     Website: 'Ir al sitio web',
     Technologies: 'Tecnologías',
     Footer: 'Este portafolio fue desarrollado con:',
+    SeeMore: 'Ver más',
+    SeeLess: 'Ver menos',
   },
-} as const;
+} as const

@@ -1,19 +1,19 @@
-import { useState } from 'react';
+import { useState } from 'react'
 import {
   HomeIcon,
   AboutIcon,
   ProjectsIcon,
   ExperienceIcon,
   ContactIcon,
-} from './Icons/MenuIcons';
+} from './Icons/MenuIcons'
 
-import { getLangFromUrl, useTranslations } from '../i18n/utils';
-const url = new URL(window.location.href);
-const lang = getLangFromUrl(url);
-const t = useTranslations(lang);
+import { getLangFromUrl, useTranslations } from '../i18n/utils'
+const url = new URL(window.location.href)
+const lang = getLangFromUrl(url)
+const t = useTranslations(lang)
 
 const MobileMenu = () => {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   const menuItems = [
     { title: 'Home', url: '/', icon: <HomeIcon /> },
@@ -21,7 +21,7 @@ const MobileMenu = () => {
     { title: 'Projects', url: '/#projects', icon: <ProjectsIcon /> },
     { title: 'Experience', url: '/#experience', icon: <ExperienceIcon /> },
     { title: 'Contact', url: '/#contact', icon: <ContactIcon /> },
-  ];
+  ]
 
   return (
     <div className='lg:hidden'>
@@ -38,7 +38,7 @@ const MobileMenu = () => {
         >
           <path
             strokeLinecap='round'
-            strokeLinejoin='round'
+            stroke-linejoin='round'
             strokeWidth={2}
             d='M4 6h16M4 12h16M4 18h16'
           />
@@ -59,7 +59,7 @@ const MobileMenu = () => {
             >
               <path
                 strokeLinecap='round'
-                strokeLinejoin='round'
+                stroke-linejoin='round'
                 strokeWidth={2}
                 d='M6 18L18 6M6 6l12 12'
               />
@@ -108,7 +108,7 @@ const MobileMenu = () => {
         </div>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default MobileMenu;
+export default MobileMenu

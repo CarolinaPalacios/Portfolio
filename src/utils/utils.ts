@@ -183,10 +183,6 @@ export const projects: Projects[] = [
         svg: 'https://raw.githubusercontent.com/apollographql/apollo-client-devtools/main/assets/apollo-wordmark.svg',
       },
       {
-        name: 'Docker',
-        svg: 'https://www.svgrepo.com/show/373553/docker.svg',
-      },
-      {
         name: 'GitHub',
         svg: 'https://www.svgrepo.com/show/521688/github.svg',
       },
@@ -233,41 +229,163 @@ export const projects: Projects[] = [
       },
     ],
   },
-
   {
     id: 4,
-    title: 'Portfolio',
-    subtitle: { en: 'Personal portfolio', es: 'Portafolio personal' },
+    title: 'E-commerce',
+    subtitle: {
+      en: 'E-commerce Challenge',
+      es: 'E-commerce - desafío técnico',
+    },
     images: {
       cover:
-        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1698038127/wfmqzjx1zdwtw3g5aji4.png',
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1711398432/mockup-home_sisivy.png',
       secondImage:
-        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1698038127/owts8kazaxx0xnjft1ek.png',
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1711398433/mockup-detail_kjjqcs.png',
       thirdImage:
-        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1698038128/bmzxxiw8vt9s3glig1un.png',
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1711398433/mockup-delete_qqeccc.png',
+      fourthImage:
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1711398438/mockup-delete-popup_amnuv7.png',
+      fifthImage:
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1711398433/mockup-update_tnslo5.png',
+      sixthImage:
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1711398434/mockup-create_dfmqdn.png',
     },
     description: {
-      en: 'My personal portfolio website',
-      es: 'Mi sitio web de portafolio personal',
+      en: 'An e-commerce platform developed as a technical challenge to demonstrate my skills in web development. The goal was to create a fully functional e-commerce website. All CRUD features were implemented.',
+      es: 'Plataforma de comercio electrónico desarrollada como desafío técnico para mostrar mis habilidades en desarrollo web. El objetivo fue crear un sitio web completamente funcional con todos los métodos CRUD implementadas.',
     },
-    github: 'https://github.com/CarolinaPalacios/portfolio',
-    url: 'https://carolina-palacios.vercel.app/en',
+    github: 'https://github.com/CarolinaPalacios/e-commerce-storydots',
+    url: 'https://e-commerce-storydots-challenge.web.app/',
     technologies: [
-      {
-        name: 'Typescript',
-        svg: 'https://www.svgrepo.com/show/349540/typescript.svg',
-      },
-      {
-        name: 'Astro',
-        svg: 'https://icon.icepanel.io/Technology/png-shadow-512/Astro.png',
-      },
-      {
-        name: 'Tailwind Css',
-        svg: 'https://www.svgrepo.com/show/374118/tailwind.svg',
-      },
       {
         name: 'React',
         svg: 'https://www.svgrepo.com/show/452092/react.svg',
+      },
+      {
+        name: 'Vite',
+        svg: 'https://www.svgrepo.com/show/374167/vite.svg',
+      },
+      {
+        name: 'Zustand',
+        svg: 'https://www.svgrepo.com/show/395866/bear.svg',
+      },
+      {
+        name: 'TypeScript',
+        svg: 'https://www.svgrepo.com/show/349540/typescript.svg',
+      },
+      {
+        name: 'NestJS',
+        svg: 'https://www.svgrepo.com/show/373872/nestjs.svg',
+      },
+      {
+        name: 'PostgreSQL',
+        svg: 'https://www.svgrepo.com/show/354200/postgresql.svg',
+      },
+      {
+        name: 'Prisma',
+        svg: 'https://www.svgrepo.com/show/373776/light-prisma.svg',
+      },
+      {
+        name: 'Swagger',
+        svg: 'https://www.svgrepo.com/show/354420/swagger.svg',
+      },
+      {
+        name: 'Tailwind',
+        svg: 'https://www.svgrepo.com/show/374118/tailwind.svg',
+      },
+      {
+        name: 'Firebase',
+        svg: 'https://www.svgrepo.com/show/373595/firebase.svg',
+      },
+      {
+        name: 'Zod',
+        svg: 'https://raw.githubusercontent.com/colinhacks/zod/master/logo.svg',
+      },
+      {
+        name: 'GitHub',
+        svg: 'https://www.svgrepo.com/show/521688/github.svg',
+      },
+      {
+        name: 'Docker',
+        svg: 'https://www.svgrepo.com/show/373553/docker.svg',
+      },
+      {
+        name: 'GitHub',
+        svg: 'https://www.svgrepo.com/show/521688/github.svg',
+      },
+      {
+        name: 'Git',
+        svg: 'https://www.svgrepo.com/show/452210/git.svg',
+      },
+      {
+        name: 'pnpm',
+        svg: 'https://svgl.vercel.app/library/pnpm_dark.svg',
+      },
+    ],
+  },
+  {
+    id: 5,
+    title: 'URL shortener API',
+    subtitle: {
+      en: 'API for shortening URLs.',
+      es: 'API para acortar URLs.',
+    },
+    description: {
+      en: `This API allows users to turn long URLs into concise, sharable links. With a robust architecture based on NestJS and Docker, this API provides a full CRUD for managing shortened links, as well as the ability to customize aliases. When accessing a shortened link generated by the API, users are automatically redirected to the associated original URL, ensuring a smooth and uninterrupted user experience.
+      Automated tests developed with Jest and Supertest ensure code stability and quality. In addition, a continuous integration and delivery (CI/CD) flow has been implemented using GitHub Actions to automate the process of building, testing and deploying the application.`,
+      es: `Esta API permite a los usuarios convertir URLs largas en enlaces concisos y compartibles. Con una arquitectura robusta basada en NestJS y Docker, esta API proporciona un CRUD completo para gestionar enlaces acortados, así como la capacidad de personalizar alias. Al acceder a un enlace acortado generado por la API, los usuarios son redirigidos automáticamente a la URL original asociada, garantizando una experiencia de usuario fluida y sin interrupciones.
+      Las pruebas automatizadas desarrolladas con Jest y Supertest garantizan la estabilidad y calidad del código. Además, implementé un flujo de integración y entrega continuas (CI/CD) utilizando GitHub Actions para automatizar el proceso de creación, prueba y despliegue de la aplicación.`,
+    },
+    github: 'https://github.com/CarolinaPalacios/url-shortener',
+    url: 'https://github.com/CarolinaPalacios/url-shortener',
+    images: {
+      cover:
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1711404351/Captura_desde_2024-03-25_18-38-29_h3od2f.png',
+      secondImage:
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1711404351/Captura_desde_2024-03-25_18-39-58_o4qwro.png',
+      thirdImage:
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1711404351/Captura_desde_2024-03-25_18-35-28_hvbrni.png',
+    },
+    technologies: [
+      {
+        name: 'NestJS',
+        svg: 'https://www.svgrepo.com/show/373872/nestjs.svg',
+      },
+      {
+        name: 'PostgreSQL',
+        svg: 'https://www.svgrepo.com/show/354200/postgresql.svg',
+      },
+      {
+        name: 'Docker',
+        svg: 'https://www.svgrepo.com/show/373553/docker.svg',
+      },
+      {
+        name: 'TypeScript',
+        svg: 'https://www.svgrepo.com/show/349540/typescript.svg',
+      },
+      {
+        name: 'TypeORM',
+        svg: 'https://svgl.vercel.app/library/typeorm.svg',
+      },
+      {
+        name: 'Jest',
+        svg: 'https://www.svgrepo.com/show/353930/jest.svg',
+      },
+      {
+        name: 'Swagger',
+        svg: 'https://www.svgrepo.com/show/354420/swagger.svg',
+      },
+      {
+        name: 'GitHub',
+        svg: 'https://www.svgrepo.com/show/521688/github.svg',
+      },
+      {
+        name: 'Git',
+        svg: 'https://www.svgrepo.com/show/452210/git.svg',
+      },
+      {
+        name: 'pnpm',
+        svg: 'https://svgl.vercel.app/library/pnpm_dark.svg',
       },
     ],
   },
@@ -485,7 +603,7 @@ export const experience: Experience[] = [
       },
       {
         name: 'pnpm',
-        svg: 'https://www.svgrepo.com/show/373778/light-pnpm.svg',
+        svg: 'https://svgl.vercel.app/library/pnpm_dark.svg',
       },
       {
         name: 'npm',

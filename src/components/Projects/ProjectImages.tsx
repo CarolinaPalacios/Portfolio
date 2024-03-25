@@ -61,17 +61,17 @@ const ProjectImages = ({
       </div>
       <dialog
         ref={dialogRef}
-        className='dark:text-white dark:bg-[#4e4e4e] bg-[#F5F5F5] w-[85%] h-[65%] rounded-md'
+        className='dark:text-white dark:bg-[#4e4e4e] bg-[#F5F5F5] w-[85%] desktop-xl:w-[80%] desktop-lg:w-[90%] desktop-lg:h-[80%] h-[75%] rounded-md'
       >
         <div className='flex flex-row mobile-xs:flex-col mobile-sm:flex-col mobile-md:flex-col gap-4 px-4 bg-[#F5F5F5] dark:bg-[#4e4e4e63]'>
-          <div className='w-full sm:w-2/3 mobile-xs:h-44 mobile-sm:w-64 mobile-md:w-full mobile-sm:h-80 mobile-sm:mt-0 mt-5'>
+          <div className='w-full sm:w-2/3 mobile-xs:h-44 mobile-sm:w-64 mobile-md:w-full mobile-sm:h-72 mobile-sm:mt-0 mt-5'>
             <ImageCarousel images={images} title={title} video={video} />
           </div>
-          <div className='desktop-lg:w-1/2 mobile-sm:w-full mobile-sm:mt-0 mt-10 pb-1 '>
+          <div className='desktop-lg:w-1/2 mobile-sm:w-full mobile-sm:mt-0 mt-10 pb-1 desktop-lg:mt-12 desktop-xl:mt-14'>
             <h1 className='text-4xl font-extrabold mobile-xs:text-xl'>
               {title}
             </h1>
-            <div className='dark:hover:bg-[#FFFFFF11] dark:text-[#a8a8a8] dark:hover:text-[#F3F3F3] bg-transparent p-[5px] text-[#535353] hover:text-[#252525] hover:bg-[#cccccc38] h-10 absolute top-8 right-5 lg:p-2 rounded-md mobile-xs:top-0 mobile-xs:right-1'>
+            <div className='dark:hover:bg-[#FFFFFF11] dark:text-[#a8a8a8] dark:hover:text-[#F3F3F3] bg-transparent p-[5px] text-[#535353] hover:text-[#252525] hover:bg-[#cccccc38] h-10 absolute desktop-lg:top-6 top-8 right-5 lg:p-2 rounded-md mobile-xs:top-0 mobile-xs:right-1'>
               <button onClick={handleCloseModal}>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -148,7 +148,7 @@ const ProjectImages = ({
                 <a
                   href={extra}
                   target='_blank'
-                  className='text-[#252525] dark:text-[#e9e9e9] text-[0.91rem] desktop-lg:w-80 mobile-sm:w-auto'
+                  className='text-[#252525] dark:text-[#e9e9e9] text-[0.91rem] desktop-lg:w-100 mobile-sm:w-auto'
                 >
                   {extra}
                 </a>
