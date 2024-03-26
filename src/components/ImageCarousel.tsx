@@ -18,7 +18,7 @@ const ImageCarousel = ({ images, video, title }: Props) => {
   const NextArrow = ({ onClick }: { onClick: MouseEventHandler }) => {
     return (
       <div
-        className='text-3xl text-redbook absolute z-10 cursor-pointer -right-10 top-[50%] mobile-xs:-right-6 mobile-md:-right-5 tablet-md:-right-1'
+        className='text-3xl absolute z-10 cursor-pointer -right-10 top-[50%] mobile-xs:-right-6 mobile-md:-right-5 mobile-sm:-right-7 tablet-md:-right-1'
         onClick={onClick}
       >
         <svg
@@ -44,7 +44,7 @@ const ImageCarousel = ({ images, video, title }: Props) => {
   const PrevArrow = ({ onClick }: { onClick: MouseEventHandler }) => {
     return (
       <div
-        className='text-3xl text-redbook absolute z-10 cursor-pointer -left-5 top-[50%] mobile-xs:-left-6'
+        className='text-3xl text-redbook absolute z-10 cursor-pointer -left-5 top-[50%] mobile-xs:-left-6 mobile-sm:-left-6 mobile-md:left-0'
         onClick={onClick}
       >
         <svg
@@ -83,67 +83,67 @@ const ImageCarousel = ({ images, video, title }: Props) => {
     beforeChange: (current: number, next: number) => setCurrentIndex(next),
   }
   return (
-    <div className='desktop-xl:mr-20 mr-20 desktop-lg:mr-10 desktop-lg:mt-10'>
+    <div className='desktop-xl:mr-20 mr-20 mobile-sm:mr-4 mobile-md:mr-6 desktop-lg:mr-10 desktop-lg:mt-10'>
       <Slider {...settings}>
-        <div className='relative desktop-lg:left-5 mobile-md:left-3 mobile-sm:top-16 mobile-sm:left-4'>
+        <div className='relative desktop-lg:left-5 mobile-md:left-10 mobile-sm:top-2 mobile-md:top-12'>
           <img
             src={
               images.cover ||
               'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1697684509/etrttzuquplxxgy8ncnv.svg'
             }
             alt={title}
-            className='desktop-xl:h-[550px] desktop-xl:w-[850px] desktop-lg:w-[665px] desktop-lg:h-[450px] mobile-xs:w-[200px] mobile-xs:h-[200px] mobile-sm:w-[240px] mobile-sm:h-[240px] tablet-md:h-[500px] tablet-md:w-[550px]'
+            className='desktop-xl:h-[550px] desktop-xl:w-[850px] desktop-lg:w-[665px] desktop-lg:h-[450px] mobile-xs:w-[200px] mobile-xs:h-[200px] mobile-sm:w-[240px] mobile-sm:h-[240px] mobile-md:w-[550px] tablet-md:h-[500px] tablet-md:w-[550px]'
           />
         </div>
         {images.secondImage && (
-          <div className='relative desktop-lg:left-5 mobile-md:left-3 mobile-sm:top-16 mobile-sm:left-4'>
+          <div className='relative desktop-lg:left-5 mobile-md:left-10 mobile-md:top-12 mobile-sm:top-2'>
             <img
               src={images.secondImage}
               alt={title}
-              className='desktop-xl:h-[550px] desktop-lg:h-[450px] desktop-lg:w-[665px] desktop-xl:w-[850px] mobile-xs:w-[200px] mobile-xs:h-[200px] mobile-sm:w-[240px] mobile-sm:h-[240px] tablet-md:h-[500px] tablet-md:w-[550px]'
+              className='desktop-xl:h-[550px] desktop-lg:h-[450px] desktop-lg:w-[665px] desktop-xl:w-[850px] mobile-xs:w-[200px] mobile-xs:h-[200px] mobile-sm:w-[240px] mobile-sm:h-[240px] mobile-md:w-[550px] tablet-md:h-[500px] tablet-md:w-[550px]'
             />
           </div>
         )}
         {images.thirdImage && (
-          <div className='relative desktop-lg:left-5 mobile-md:left-3 mobile-sm:top-16 mobile-sm:left-4'>
+          <div className='relative desktop-lg:left-5 mobile-md:left-10 mobile-md:top-12 mobile-sm:top-2'>
             <img
               src={images.thirdImage}
               alt={title}
-              className='desktop-xl:h-[550px] desktop-lg:h-[450px] desktop-lg:w-[665px] desktop-xl:w-[850px] mobile-xs:w-[200px] mobile-xs:h-[200px] mobile-sm:w-[240px] mobile-sm:h-[240px] tablet-md:h-[500px] tablet-md:w-[550px]'
+              className='desktop-xl:h-[550px] desktop-lg:h-[450px] desktop-lg:w-[665px] desktop-xl:w-[850px] mobile-xs:w-[200px] mobile-xs:h-[200px] mobile-sm:w-[240px] mobile-sm:h-[240px] mobile-md:w-[550px] tablet-md:h-[500px] tablet-md:w-[550px]'
             />
           </div>
         )}
         {images.fourthImage && (
-          <div className='relative desktop-lg:left-5 mobile-md:left-3 mobile-sm:top-16 mobile-sm:left-4'>
+          <div className='relative desktop-lg:left-5 mobile-md:left-10 mobile-md:top-12 mobile-sm:top-2'>
             <img
               src={images.fourthImage}
               alt={title}
-              className='desktop-xl:h-[550px] desktop-lg:h-[450px] desktop-lg:w-[665px] desktop-xl:w-[850px] mobile-xs:w-[200px] mobile-xs:h-[200px] mobile-sm:w-[240px] mobile-sm:h-[240px] tablet-md:h-[500px] tablet-md:w-[550px]'
+              className='desktop-xl:h-[550px] desktop-lg:h-[450px] desktop-lg:w-[665px] desktop-xl:w-[850px] mobile-xs:w-[200px] mobile-xs:h-[200px] mobile-sm:w-[240px] mobile-sm:h-[240px] mobile-md:w-[550px] tablet-md:h-[500px] tablet-md:w-[550px]'
             />
           </div>
         )}
         {images.fifthImage && (
-          <div className='relative desktop-lg:left-5 mobile-md:left-3 mobile-sm:top-16 mobile-sm:left-4'>
+          <div className='relative desktop-lg:left-5 mobile-md:left-10 mobile-md:top-12 mobile-sm:top-2'>
             <img
               src={images.fifthImage}
               alt={title}
-              className='desktop-xl:h-[550px] desktop-lg:h-[450px] desktop-lg:w-[665px] desktop-xl:w-[850px] mobile-xs:w-[200px] mobile-xs:h-[200px] mobile-sm:w-[240px] mobile-sm:h-[240px] tablet-md:h-[500px] tablet-md:w-[550px]'
+              className='desktop-xl:h-[550px] desktop-lg:h-[450px] desktop-lg:w-[665px] desktop-xl:w-[850px] mobile-xs:w-[200px] mobile-xs:h-[200px] mobile-sm:w-[240px] mobile-sm:h-[240px] mobile-md:w-[550px] tablet-md:h-[500px] tablet-md:w-[550px]'
             />
           </div>
         )}
         {images.sixthImage && (
-          <div className='relative desktop-lg:left-5 mobile-md:left-3 mobile-sm:top-16 mobile-sm:left-4'>
+          <div className='relative desktop-lg:left-5 mobile-md:left-10 mobile-md:top-12 mobile-sm:top-2'>
             <img
               src={images.sixthImage}
               alt={title}
-              className='desktop-xl:h-[550px] desktop-lg:h-[450px] desktop-lg:w-[665px] desktop-xl:w-[850px] mobile-xs:w-[200px] mobile-xs:h-[200px] mobile-sm:w-[240px] mobile-sm:h-[240px] tablet-md:h-[500px] tablet-md:w-[550px]'
+              className='desktop-xl:h-[550px] desktop-lg:h-[450px] desktop-lg:w-[665px] desktop-xl:w-[850px] mobile-xs:w-[200px] mobile-xs:h-[200px] mobile-sm:w-[240px] mobile-sm:h-[240px] mobile-md:w-[550px] tablet-md:h-[500px] tablet-md:w-[550px]'
             />
           </div>
         )}
         {video && (
-          <div className='relative desktop-lg:left-5 mobile-md:left-2 mobile-sm:top-16 mobile-sm:left-4'>
+          <div className='relative desktop-lg:left-5 mobile-md:left-10 mobile-md:top-12 mobile-sm:top-2'>
             <iframe
-              className='desktop-lg:h-[450px] desktop-xl:h-[550px] desktop-lg:w-[95%] desktop-xl:w-[100%] mobile-md:w-full mobile-md:h-[500px] mobile-sm:w-full mobile-sm:h-[240px] tablet-md:h-[500px] tablet-md:w-[550px]'
+              className='desktop-lg:h-[450px] desktop-xl:h-[550px] desktop-lg:w-[95%] desktop-xl:w-[100%] mobile-md:w-[550px] mobile-md:h-[500px] mobile-sm:w-full mobile-sm:h-[240px] tablet-md:h-[500px] tablet-md:w-[550px]'
               src={video}
               title={title}
               allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'

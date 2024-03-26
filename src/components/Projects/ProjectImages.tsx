@@ -61,13 +61,13 @@ const ProjectImages = ({
       </div>
       <dialog
         ref={dialogRef}
-        className='dark:text-white dark:bg-[#4e4e4e] bg-[#F5F5F5] w-[85%] desktop-xl:w-[80%] desktop-lg:w-[90%] desktop-lg:h-[80%] h-[75%] rounded-md'
+        className='dark:text-white dark:bg-[#4e4e4e] bg-[#F5F5F5] w-[85%] desktop-xl:w-[80%] desktop-lg:w-[90%] desktop-lg:h-[80%] mobile-sm:h-[90%] h-[75%] rounded-md'
       >
         <div className='flex flex-row mobile-xs:flex-col mobile-sm:flex-col mobile-md:flex-col gap-4 px-4 bg-[#F5F5F5] dark:bg-[#4e4e4e63]'>
-          <div className='w-full sm:w-2/3 mobile-xs:h-44 mobile-sm:w-64 mobile-md:w-full mobile-sm:h-72 mobile-sm:mt-0 mt-5'>
+          <div className='w-full sm:w-2/3 mobile-xs:h-44 mobile-sm:w-64 mobile-md:w-full mobile-sm:h-60 mobile-sm:mt-12 mt-5'>
             <ImageCarousel images={images} title={title} video={video} />
           </div>
-          <div className='desktop-lg:w-1/2 mobile-sm:w-full mobile-sm:mt-0 mt-10 pb-1 desktop-lg:mt-12 desktop-xl:mt-14'>
+          <div className='desktop-lg:w-1/2 mobile-sm:w-full mt-10 pb-1 desktop-lg:mt-12 desktop-xl:mt-14'>
             <h1 className='text-4xl font-extrabold mobile-xs:text-xl'>
               {title}
             </h1>
@@ -153,7 +153,7 @@ const ProjectImages = ({
                   {extra}
                 </a>
               )}
-              <p className='text-[#252525] dark:text-[#CCCCCC] text-[0.91rem] mobile-xs:w-48 mobile-xs:overflow-y-auto mobile-xs:max-h-[180px] mobile-sm:w-72 desktop-lg:w-auto pr-5 desktop-lg:overflow-y-auto tablet-md:overflow-y-auto tablet-md:max-h-[100px] desktop-lg:max-h-[150px]'>
+              <p className='text-[#252525] dark:text-[#CCCCCC] text-[0.91rem] mobile-xs:w-48 mobile-xs:overflow-y-auto mobile-sm:overflow-y-auto mobile-md:overflow-y-auto mobile-md:max-h-[120px] mobile-xs:max-h-[180px] mobile-sm:max-h-[180px] mobile-sm:w-72 desktop-lg:w-auto pr-5 desktop-lg:overflow-y-auto tablet-md:overflow-y-auto tablet-md:max-h-[100px] desktop-lg:max-h-[150px]'>
                 {description}
               </p>
               <div className='py-2 mobile-sm:w-32 mobile-xs:w-32 mobile-xs:text-sm'>
