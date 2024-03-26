@@ -1,54 +1,89 @@
-# Astro Starter Kit: Basics
+<h2 align="center">
+Personal Portfolio<br/>
+<a href="https://carolina-palacios.vercel.app/" style="color: #FF5D01;">carolina-palacios</a>
+</h2>
+<div align="center">
+<img alt="carolina-palacios" src="./images/mockup-portfolio.png" height="400"/>
+</div>
 
-```sh
-npm create astro@latest -- --template basics
+<div align="center">
+  <a href="https://astro.build/" style="text-decoration: none;">
+    <img src="https://img.shields.io/badge/Astro-FF5D01?logo=astro&logoColor=fff&style=for-the-badge" alt="Astro">
+  </a>
+  <a href="https://vercel.com/" style="text-decoration: none;">
+    <img src="https://img.shields.io/badge/Vercel-black?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel">
+  </a>
+  <a href="https://www.typescriptlang.org" style="text-decoration: none;">
+    <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
+  </a>
+  <a href="https://reactjs.org" style="text-decoration: none;">
+    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React">
+  </a>
+  <a href="https://tailwindcss.com" style="text-decoration: none;">
+    <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS">
+  </a>
+  <a href="https://forthebadge.com" style="text-decoration: none;"><img src="https://img.shields.io/badge/Open_Source-FF5D80?style=for-the-badge" alt="Open Source" ></a>
+</div>
+
+<h3 align="center">
+    🔸
+    <a href="https://github.com/carolina-palacios/portfolio/issues" style="color: #00BFFF;">Report Bug</a> &nbsp; &nbsp;
+    🔸
+    <a href="https://github.com/carolina-palacios/portfolio/issues" style="color: #00BFFF;">Request Feature</a>
+</h3>
+
+## Open Source
+
+You can fork this repository to modify it and make changes of your own. Please give me proper credit by linking back to [CarolinaPalacios](https://github.com/carolina-palacios/portfolio). Thanks!
+
+## Features
+
+- **📖 Multi-Page Layout**
+
+- **🌙 Dark/Light Mode**
+
+- **🎨 Styled with TailwindCSS**
+
+- **📱 Fully Responsive**
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- [![NodeJS](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/en/)
+
+- [![GIT](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/)
+
+## 🛠 Installation and Setup
+
+1. Clone the repository:
+
+```bash
+## clone the repository
+$ git clone https://github.com/carolina-palacios/portfolio.git
+
+## navigate to the directory
+$ cd portfolio
+
+## install dependencies
+$ npm install
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+2. Start the development mode:
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+```bash
+## start the development mode
+$ npm run dev
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+3. Open the browser and navigate to http://localhost:4321 to view the site. 🚀
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## ✨ Usage
 
-Any static assets, like images, can be placed in the `public/` directory.
+If you open the project folder and navigate to /src/components, you will find all the components you need.
+You can edit your information under /src/utils/utils.ts.
+Translations are in /src/i18n.
 
-## 🧞 Commands
+## Support
 
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Give a ⭐ if you like this website!
