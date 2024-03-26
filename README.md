@@ -7,16 +7,16 @@ Personal Portfolio<br/>
 </div>
 
 <div align="center">
-  <a href="https://astro.build/" ">
+  <a href="https://astro.build/" >
     <img src="https://img.shields.io/badge/Astro-FF5D01?logo=astro&logoColor=fff&style=for-the-badge" alt="Astro">
   </a>
-  <a href="https://vercel.com/" ">
+  <a href="https://vercel.com/" >
     <img src="https://img.shields.io/badge/Vercel-black?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel">
   </a>
-  <a href="https://www.typescriptlang.org" ">
+  <a href="https://www.typescriptlang.org" >
     <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
   </a>
-  <a href="https://reactjs.org" ">
+  <a href="https://reactjs.org" >
     <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React">
   </a>
   <a href="https://tailwindcss.com" style="text-decoration: none;">
