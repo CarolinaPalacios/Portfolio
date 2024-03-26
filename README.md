@@ -6,31 +6,26 @@ Personal Portfolio<br/>
 <img alt="carolina-palacios" src="./images/mockup-portfolio.png" height="400"/>
 </div>
 
-<div align="center">
-  <a href="https://astro.build/" style="text-decoration: none !important;">
-    <img src="https://img.shields.io/badge/Astro-FF5D01?logo=astro&logoColor=fff&style=for-the-badge" alt="Astro">
-  </a>
-  <a href="https://vercel.com/" style="text-decoration: none !important;">
-    <img src="https://img.shields.io/badge/Vercel-black?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel">
-  </a>
-  <a href="https://www.typescriptlang.org" style="text-decoration: none !important;">
-    <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
-  </a>
-  <a href="https://reactjs.org" style="text-decoration: none !important;">
-    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React">
-  </a>
-  <a href="https://tailwindcss.com" style="text-decoration: none !important;">
-    <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS">
-  </a>
-  <a href="https://forthebadge.com" style="text-decoration: none !important;"><img src="https://img.shields.io/badge/Open_Source-FF5D80?style=for-the-badge" alt="Open Source" ></a>
-</div>
-
 <h3 align="center">
     🔸
     <a href="https://github.com/carolina-palacios/portfolio/issues" style="color: #00BFFF;">Report Bug</a> &nbsp; &nbsp;
     🔸
     <a href="https://github.com/carolina-palacios/portfolio/issues" style="color: #00BFFF;">Request Feature</a>
 </h3>
+
+## ⚡️ Tech Stack
+
+- [![Astro](https://img.shields.io/badge/Astro-FF5D01?logo=astro&logoColor=fff&style=for-the-badge)](https://astro.build/)
+
+- [![Vercel](https://img.shields.io/badge/Vercel-black?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com/)
+
+- [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+
+- [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org)
+
+- [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
+
+- [![Open Source](https://img.shields.io/badge/Open_Source-FF5D80?style=for-the-badge)](https://github.com/carolina-palacios/portfolio)
 
 ## Open Source
 
