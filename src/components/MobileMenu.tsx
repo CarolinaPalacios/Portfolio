@@ -5,6 +5,7 @@ import {
   ProjectsIcon,
   ExperienceIcon,
   ContactIcon,
+  CertificateIcon,
 } from './Icons/MenuIcons'
 
 import { getLangFromUrl, useTranslations } from '../i18n/utils'
@@ -20,6 +21,7 @@ const MobileMenu = () => {
     { title: 'About', url: '/#about', icon: <AboutIcon /> },
     { title: 'Projects', url: '/#projects', icon: <ProjectsIcon /> },
     { title: 'Experience', url: '/#experience', icon: <ExperienceIcon /> },
+    { title: 'Certificates', url: '/#certificates', icon: <CertificateIcon /> },
     { title: 'Contact', url: '/#contact', icon: <ContactIcon /> },
   ]
 
@@ -99,6 +101,7 @@ const MobileMenu = () => {
                         | 'Projects'
                         | 'Experience'
                         | 'Contact'
+                        | 'Certificates'
                     )}
                   </a>
                 </li>

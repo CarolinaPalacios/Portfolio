@@ -1,16 +1,19 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import Header from '../../components/Header.astro';
-import Projects from '../../components/Projects/Projects.astro';
-import Experience from '../../components/Experience/Experience.astro';
-import Contact from '../../components/Contact.astro';
-import Footer from '../../components/Footer.astro';
-import Home from '../../components/Home.astro';
+import Layout from '../../layouts/Layout.astro'
+import Header from '../../components/Header.astro'
+import Projects from '../../components/Projects/Projects.astro'
+import Experience from '../../components/Experience/Experience.astro'
+import Contact from '../../components/Contact.astro'
+import Footer from '../../components/Footer.astro'
+import Home from '../../components/Home.astro'
+import Certificates from '../../components/Certificates/Certificates.astro'
 ---
 
 <Layout title='Portfolio Carolina Palacios'>
   <Header />
-  <main class='px-[15%] mobile-sm:mt-[20rem] mobile-md:mt-[8rem] tablet-md:mt-[15rem] lg:mt-[15rem]'>
+  <main
+    class='px-[15%] mobile-sm:mt-[20rem] mobile-md:mt-[8rem] tablet-md:mt-[15rem] lg:mt-[15rem]'
+  >
     <div>
       <Home />
     </div>
@@ -20,6 +23,9 @@ import Home from '../../components/Home.astro';
     </div>
     <div id='experience'>
       <Experience />
+    </div>
+    <div id='certificates'>
+      <Certificates />
     </div>
     <div id='contact'>
       <Contact />

@@ -1,43 +1,74 @@
 ---
-import Typewriter from './Typewriter.tsx';
-import About from './About.astro';
-import { getLangFromUrl, useTranslations } from '../i18n/utils';
+import Typewriter from './Typewriter.tsx'
+import About from './About.astro'
+import { getLangFromUrl, useTranslations } from '../i18n/utils'
 
-const lang = getLangFromUrl(Astro.url);
-const t = useTranslations(lang);
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
 ---
 
 <div
-  class='sm:h-screen mobile-xs:mt-60 desktop-lg:min-h-[632px] sm:min-h-[500px] min-h-[500px] h-[95vh] desktop-lg:pt-30 flex flex-col items-center justify-center text-center gap-16 sm:gap-8'
+  class='sm:h-screen mobile-xs:mt-60 desktop-lg:min-h-[632px] sm:min-h-[500px] min-h-[500px] h-[95vh] desktop-lg:pt-30 mobile-sm:h-[70vh] mobile-md:h-[70vh] tablet-md:h-[70vh] flex flex-col items-center justify-center text-center gap-16 sm:gap-8'
 >
-  <h1 class='text-5xl text-gray-400 font-bold mobile-sm:text-xl mobile-md:text-2xl mobile-xs:text-lg tablet-md:text-3xl'>Carolina Palacios</h1>
+  <h1
+    class='text-4xl text-gray-400 font-bold mobile-sm:text-xl mobile-md:text-2xl mobile-xs:text-lg tablet-md:text-3xl'
+  >
+    Carolina Palacios
+  </h1>
   <p
     class='leading-[1.25] mobile-sm:text-3xl mobile-md:text-3xl mobile-xs:text-2xl text-6xl font-extrabold lg:w-[60%] w-[90%] py-5 mobile-xs:py-0 tablet-md:text-5xl'
   >
-   {t('HomeText')} <Typewriter client:only='react' />
+    {t('HomeText')}
+    <Typewriter client:only='react' />
   </p>
-  <div class="flex items-center gap-10 select-none mt-10 mobile-xs:mt-0">
-    <a href='#contact' class="flex items-center gap-1 py-4 font-bold text-black w-fit bg-[#748c74] dark:bg-blue-400 hover:opacity-90 px-6 rounded-2xl mobile-xs:p-2 mobile-xs:rounded-xl" aria-label="Contact me">
-      <span class="mobile-sm:hidden mobile-xs:hidden">
+  <div class='flex items-center gap-10 select-none mt-10 mobile-xs:mt-0'>
+    <a
+      href='#contact'
+      class='flex items-center gap-1 py-4 font-bold text-black w-fit bg-[#748c74] dark:bg-blue-400 hover:opacity-90 px-6 rounded-2xl mobile-xs:p-2 mobile-xs:rounded-xl'
+      aria-label='Contact me'
+    >
+      <span class='mobile-sm:hidden mobile-xs:hidden'>
         {t('ContactButton')}
-        </span>
-     <img src="https://res.cloudinary.com/dr4c4eqnr/image/upload/v1697684518/cypn9mwntaolbgxnzjry.svg" alt="Contact" class="h-6 w-6 mobile-xs:w-5 mobile-xs:h-5">
-</svg>
+      </span>
+      <img
+        src='https://res.cloudinary.com/dr4c4eqnr/image/upload/v1697684518/cypn9mwntaolbgxnzjry.svg'
+        alt='Contact'
+        class='h-6 w-6 mobile-xs:w-5 mobile-xs:h-5'
+      />
     </a>
-    <a href=`${lang === 'en' ? '/Palacios-Carolina-CV-English.pdf' : '/Palacios-Carolina-CV.pdf'}` download class="flex items-center justify-center gap-1 py-4 font-bold dark:text-black w-fit dark:bg-white bg-[#202020] text-white hover:opacity-90 px-6 rounded-2xl mobile-xs:p-2 mobile-xs:rounded-xl" aria-label="Download CV">
-      <span class="mobile-sm:hidden mobile-xs:hidden">
+
+    <a
+      href=`${lang === 'en' ? '/Palacios-Carolina-CV-English.pdf' : '/Palacios-Carolina-CV.pdf'}`
+      download
+      class='flex items-center justify-center gap-1 py-4 font-bold dark:text-black w-fit dark:bg-white bg-[#202020] text-white hover:opacity-90 px-6 rounded-2xl mobile-xs:p-2 mobile-xs:rounded-xl'
+      aria-label='Download CV'
+    >
+      <span class='mobile-sm:hidden mobile-xs:hidden'>
         {t('CV')}
       </span>
-   <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-download mobile-xs:w-5 mobile-xs:h-5" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-   <path d="M14 3v4a1 1 0 0 0 1 1h4"></path>
-   <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z"></path>
-   <path d="M12 17v-6"></path>
-   <path d="M9.5 14.5l2.5 2.5l2.5 -2.5"></path>
-</svg>
-  </a>
+      <svg
+        xmlns='http://www.w3.org/2000/svg'
+        class='icon icon-tabler icon-tabler-file-download mobile-xs:w-5 mobile-xs:h-5'
+        width='24'
+        height='24'
+        viewBox='0 0 24 24'
+        stroke-width='2'
+        stroke='currentColor'
+        fill='none'
+        stroke-linecap='round'
+        stroke-linejoin='round'
+      >
+        <path stroke='none' d='M0 0h24v24H0z' fill='none'></path>
+        <path d='M14 3v4a1 1 0 0 0 1 1h4'></path>
+        <path
+          d='M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z'
+        ></path>
+        <path d='M12 17v-6'></path>
+        <path d='M9.5 14.5l2.5 2.5l2.5 -2.5'></path>
+      </svg>
+    </a>
   </div>
-  <div id='about'>
-    <About />
-  </div>
+</div>
+<div id='about'>
+  <About />
 </div>

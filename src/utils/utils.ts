@@ -5,9 +5,20 @@ import type {
   Experience,
   About,
   Image,
+  Certificates,
+  Contents,
 } from '../utils/utils.d'
 
-export type { Projects, Technologies, Contact, Experience, About, Image }
+export type {
+  Projects,
+  Technologies,
+  Contact,
+  Experience,
+  About,
+  Image,
+  Certificates,
+  Contents,
+}
 
 export const projects: Projects[] = [
   {
@@ -24,7 +35,7 @@ export const projects: Projects[] = [
     },
     images: {
       cover:
-        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1698108138/ql5fvtodcpghdmdj1hxu.png',
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1712087505/bb_pwghr0.png',
       secondImage:
         'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1698108137/mkpokl3zrt0454g7wu6c.png',
       thirdImage:
@@ -98,8 +109,8 @@ export const projects: Projects[] = [
     id: 2,
     title: 'Discord Clone',
     subtitle: {
-      en: 'Discord clone web application',
-      es: 'Aplicación web de clon de Discord',
+      en: 'Web application',
+      es: 'Aplicación web',
     },
     description: {
       en: `I developed a Discord clone using cutting-edge technologies like Nx, NestJS, React, and GraphQL. The project showcases my skills in creating real-time chat environments with features similar to Discord. Key highlights include Monorepo management, secure JWT authentication with Clerk, and integration of Livekit for high-quality real-time chat. The application includes features such as server creation, roles, permissions, and a robust WebSocket-based chat system.`,
@@ -107,17 +118,17 @@ export const projects: Projects[] = [
     },
     images: {
       cover:
-        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1708444728/mbhcohlose5v4feyb7g6.png',
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1712087505/ds-5_mnjyn2.png',
       secondImage:
-        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1708444728/ddmvuovyvclzpgrtzwbz.png',
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1712087508/ds-2_xo2cxf.png',
       thirdImage:
-        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1708444729/lwe61awdzjqczb45qhqn.png',
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1712087508/ds-1_hts5et.png',
       fourthImage:
-        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1708444728/vwt3rw3y1ffj9ohu5mbs.png',
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1712087507/ds-6_xlejo6.png',
       fifthImage:
-        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1708444728/jejwd4zrwn1epe5glyuc.png',
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1712087507/ds-3_dnwtsl.png',
       sixthImage:
-        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1708444728/omix44zxiwau2x9oxt9q.png',
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1712087507/ds-4_fvlgxu.png',
     },
     url: 'https://github.com/CarolinaPalacios/discord-clone',
     github: 'https://github.com/CarolinaPalacios/discord-clone',
@@ -198,11 +209,13 @@ export const projects: Projects[] = [
     subtitle: { en: 'Tetris game', es: 'Juego de Tetris' },
     images: {
       cover:
-        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1708489750/l6mfjtx0mseqhghpsg7v.png',
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1712087509/tetris-inicio_bju2fz.png',
       secondImage:
-        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1708489751/i3xi8u4oqly3tn9rjvv6.png',
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1712087507/tetris3_xtc04s.png',
       thirdImage:
-        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1708489751/y46xgejisv3abdnacnor.png',
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1712087507/tetris2_in3weu.png',
+      fourthImage:
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1712087506/tetris1_ykom6g.png',
     },
     description: {
       en: 'I developed a fully functional Tetris game using web technologies such as JavaScript, HTML, and CSS. The main goal was to recreate the classic Tetris experience with a focus on modularity and object-oriented structure. The game features all the expected characteristics of a traditional Tetris game, including piece movement, rotation, line clearing, scoring, difficulty levels, and background music. I implemented efficient algorithms for the game logic and collision detection.',
@@ -327,8 +340,8 @@ export const projects: Projects[] = [
     id: 5,
     title: 'URL shortener API',
     subtitle: {
-      en: 'API for shortening URLs.',
-      es: 'API para acortar URLs.',
+      en: 'API for shortening URLs',
+      es: 'API para acortar URLs',
     },
     description: {
       en: `This API allows users to turn long URLs into concise, sharable links. With a robust architecture based on NestJS and Docker, this API provides a full CRUD for managing shortened links, as well as the ability to customize aliases. When accessing a shortened link generated by the API, users are automatically redirected to the associated original URL, ensuring a smooth and uninterrupted user experience.
@@ -340,11 +353,11 @@ export const projects: Projects[] = [
     url: 'https://github.com/CarolinaPalacios/url-shortener',
     images: {
       cover:
-        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1711404351/Captura_desde_2024-03-25_18-38-29_h3od2f.png',
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1712087505/url-2_dtuxwg.png',
       secondImage:
-        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1711404351/Captura_desde_2024-03-25_18-39-58_o4qwro.png',
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1712087505/url-3_wsfcbl.png',
       thirdImage:
-        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1711404351/Captura_desde_2024-03-25_18-35-28_hvbrni.png',
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1712087505/url-1_ry6a7y.png',
     },
     technologies: [
       {
@@ -618,5 +631,428 @@ export const experience: Experience[] = [
         svg: 'https://www.svgrepo.com/show/374167/vite.svg',
       },
     ],
+  },
+]
+
+export const certificates: Certificates[] = [
+  {
+    title: {
+      en: 'Full Stack Web Developer',
+      es: 'Desarrolladora Web Full Stack',
+    },
+    institution: 'Henry',
+    images: {
+      cover:
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1712091004/henry_xlb7il.png',
+    },
+    contents: [
+      {
+        title: {
+          en: 'JavaScript',
+          es: 'JavaScript',
+        },
+      },
+      {
+        title: {
+          en: 'React',
+          es: 'React',
+        },
+      },
+      {
+        title: {
+          en: 'Redux',
+          es: 'Redux',
+        },
+      },
+      {
+        title: {
+          en: 'Node.js',
+          es: 'Node.js',
+        },
+      },
+      {
+        title: {
+          en: 'Express',
+          es: 'Express',
+        },
+      },
+      {
+        title: {
+          en: 'PostgreSQL',
+          es: 'PostgreSQL',
+        },
+      },
+      {
+        title: {
+          en: 'Sequelize',
+          es: 'Sequelize',
+        },
+      },
+      {
+        title: {
+          en: 'SQL',
+          es: 'SQL',
+        },
+      },
+      {
+        title: {
+          en: 'Jest',
+          es: 'Jest',
+        },
+      },
+      {
+        title: {
+          en: 'Supertest',
+          es: 'Supertest',
+        },
+      },
+      {
+        title: {
+          en: 'CSS',
+          es: 'CSS',
+        },
+      },
+      {
+        title: {
+          en: 'HTML',
+          es: 'HTML',
+        },
+      },
+      {
+        title: {
+          en: 'Git',
+          es: 'Git',
+        },
+      },
+      {
+        title: {
+          en: 'Agile methodologies (SCRUM)',
+          es: 'Metodos agiles (SCRUM)',
+        },
+      },
+    ],
+    url: 'https://certificates.soyhenry.com/new-cert?id=456908a544116c2f35ee26da678be6ea62d9b6ce60f9525b014567bd040608e5',
+  },
+  {
+    title: {
+      en: 'JavaScript in the Backend',
+      es: 'JavaScript en el Backend',
+    },
+    institution: 'CódigoFacilito',
+    images: {
+      cover:
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1712091006/codigofacilito_vpi2l6.png',
+    },
+    contents: [
+      {
+        title: {
+          en: 'TypeScript',
+          es: 'TypeScript',
+        },
+      },
+      {
+        title: {
+          en: 'JavaScript',
+          es: 'JavaScript',
+        },
+      },
+      {
+        title: {
+          en: 'Node Internals',
+          es: 'Internals en Node',
+        },
+      },
+      {
+        title: {
+          en: 'NestJS',
+          es: 'NestJS',
+        },
+      },
+
+      {
+        title: {
+          en: 'MongoDB',
+          es: 'MongoDB',
+        },
+      },
+      {
+        title: {
+          en: 'Mongoose',
+          es: 'Mongoose',
+        },
+      },
+
+      {
+        title: {
+          en: 'RESTful API',
+          es: 'RESTful API',
+        },
+      },
+      {
+        title: {
+          en: 'Webhooks and events',
+          es: 'Webhooks y eventos',
+        },
+      },
+      {
+        title: {
+          en: 'Redis',
+          es: 'Redis',
+        },
+      },
+      {
+        title: {
+          en: 'Swagger',
+          es: 'Swagger',
+        },
+      },
+      {
+        title: {
+          en: 'Jest',
+          es: 'Jest',
+        },
+      },
+      {
+        title: {
+          en: 'Docker',
+          es: 'Docker',
+        },
+      },
+      {
+        title: {
+          en: 'Backend caching and performance',
+          es: 'Caché y performance en el backend',
+        },
+      },
+      {
+        title: {
+          en: 'Architecture and design patterns',
+          es: 'Arquitectura y patrones de diseño',
+        },
+      },
+      {
+        title: {
+          en: 'Sockets and real-time communication',
+          es: 'Sockets y comunicación en tiempo real',
+        },
+      },
+
+      {
+        title: {
+          en: 'Test Driven Development (TDD)',
+          es: 'Desarrollo basado en pruebas (TDD)',
+        },
+      },
+      {
+        title: {
+          es: 'Deploy de APIs, Hosting y Soluciones Serverless',
+          en: 'API Deployment, Hosting and Serverless Solutions',
+        },
+      },
+    ],
+    url: 'https://codigofacilito.com/certificates/124979',
+  },
+  {
+    title: {
+      en: 'SQL',
+      es: 'SQL',
+    },
+    institution: 'Desafío Latam',
+    images: {
+      cover:
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1712091003/certificate-sql1-desafiolatam_1_wfmdzz.png',
+      secondImage:
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1712091004/certificate-sql2-desafiolatam_1_nesovo.png',
+      thirdImage:
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1712091003/certificate-sql3-desafiolatam_1_kmbnig.png',
+      fourthImage:
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1712091006/certificate-sql4-desafiolatam_1_dxwbyc.png',
+      fifthImage:
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1712091007/certificate-sql5-desafiolatam_1_uyll5t.png',
+    },
+    contents: [
+      {
+        title: {
+          en: 'SQL Basics',
+          es: 'Conceptos Básicos de SQL',
+        },
+      },
+      {
+        title: {
+          en: 'Data Manipulation',
+          es: 'Manipulación de Datos',
+        },
+      },
+      {
+        title: {
+          en: 'Data Query',
+          es: 'Consulta de Datos',
+        },
+      },
+      {
+        title: {
+          en: 'Relationships and Joins',
+          es: 'Relaciones y Joins',
+        },
+      },
+      {
+        title: {
+          en: 'Subqueries',
+          es: 'Subconsultas',
+        },
+      },
+      {
+        title: {
+          en: 'Functions and Aggregations',
+          es: 'Funciones y Agregaciones',
+        },
+      },
+      {
+        title: {
+          en: 'Table Manipulation',
+          es: 'Manipulación de tablas',
+        },
+      },
+      {
+        title: {
+          en: 'Restrictions',
+          es: 'Restricciones',
+        },
+      },
+    ],
+  },
+  {
+    title: {
+      en: 'English for IT 1',
+      es: 'Inglés para IT 1',
+    },
+    institution: 'Cisco',
+    images: {
+      cover:
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1712091007/cisco_cga9jq.png',
+    },
+    contents: [
+      {
+        title: {
+          en: 'Adverbs',
+          es: 'Adverbios',
+        },
+      },
+
+      {
+        title: {
+          en: 'Future Perfect',
+          es: 'Futuro perfecto',
+        },
+      },
+      {
+        title: {
+          en: 'Idiomatic Phrases',
+          es: 'Frases idiomaticas',
+        },
+      },
+      {
+        title: {
+          en: 'Imperative Instruction',
+          es: 'Instrucciones imperativas',
+        },
+      },
+
+      {
+        title: {
+          en: 'Inversion',
+          es: 'Inversión',
+        },
+      },
+
+      {
+        title: {
+          en: 'Modal Verbs',
+          es: 'Verbos modales',
+        },
+      },
+
+      {
+        title: {
+          en: 'Passive Voice',
+          es: 'Voz pasiva',
+        },
+      },
+      {
+        title: {
+          en: 'Past Simple',
+          es: 'Pasado simple',
+        },
+      },
+      {
+        title: {
+          en: 'Relative Pronouns',
+          es: 'Pronombres relativos',
+        },
+      },
+      {
+        title: {
+          en: 'Supplier Evaluation Modules',
+          es: 'Módulos de evaluación de proveedores',
+        },
+      },
+      {
+        title: {
+          en: 'Compilers and Interpreters Vocabulary',
+          es: 'Vocabulario de compiladores e intérpretes',
+        },
+      },
+      {
+        title: {
+          en: 'Fraudulent call vocabulary',
+          es: 'Vocabulario de llamadas fraudulentas',
+        },
+      },
+      {
+        title: {
+          en: 'Network and Software Engineering Vocabulary',
+          es: 'Vocabulario de ingeniería de redes y software',
+        },
+      },
+      {
+        title: {
+          en: 'Job Roles and Responsibilities',
+          es: 'Funciones y responsabilidades en el puesto de trabajo',
+        },
+      },
+      {
+        title: {
+          en: 'Information Security Policy',
+          es: 'Política de seguridad de la información',
+        },
+      },
+      {
+        title: {
+          en: 'User Experience Vocabulary',
+          es: 'Vocabulario de experiencia de usuario',
+        },
+      },
+    ],
+    url: 'https://www.credly.com/badges/857006e7-0b2e-42da-8955-db2e408fb79c/public_url',
+  },
+  {
+    title: {
+      en: 'EF SET Certificate',
+      es: 'Certificación EF SET',
+    },
+    institution: 'EF SET',
+    images: {
+      cover:
+        'https://res.cloudinary.com/dr4c4eqnr/image/upload/v1712168469/ef-set-rec_cijryq.png',
+    },
+    contents: [
+      {
+        title: {
+          en: 'English',
+          es: 'Inglés',
+        },
+      },
+    ],
+    url: 'https://www.efset.org/cert/dAHYE2',
   },
 ]

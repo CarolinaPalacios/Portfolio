@@ -1,0 +1,36 @@
+---
+import CertificateCard from './CertificateCard.astro'
+import { certificates } from '../../utils/utils.ts'
+import { getLangFromUrl, useTranslations } from '../../i18n/utils'
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+---
+
+<section
+  class='flex flex-col w-full sm:w-full gap-12 pt-10 mobile-sm:mt-24 mobile-md:pt-32 tablet-md:mt-24 desktop-lg:mt-44 mobile-xs:mt-56 pb-10'
+>
+  <div class='w-full flex flex-col gap-8'>
+    <h1
+      class='flex flex-initial font-extrabold desktop-lg:text-6xl self-start mobile-sm:text-3xl mobile-md:text-3xl mobile-xs:text-2xl tablet-md:text-4xl'
+    >
+      {t('Certificates')}
+    </h1>
+  </div>
+  <div
+    class='grid gap-y-8 desktop-lg:grid-cols-3 tablet-md:grid-cols-2 tablet-md:gap-x-14 place-items-center'
+  >
+    {
+      certificates.map(({ title, images, url, contents, institution }) => (
+        <div class='w-fit px-2'>
+          <CertificateCard
+            title={lang === 'es' ? title.es : title.en}
+            institution={institution}
+            images={images}
+            url={url}
+            contents={contents}
+          />
+        </div>
+      ))
+    }
+  </div>
+</section>

@@ -1,18 +1,18 @@
 ---
-import type { Image, Technologies } from '../../utils/utils.ts';
-import ProjectImages from './ProjectImages.tsx';
+import type { Image, Technologies } from '../../utils/utils.ts'
+import ProjectImages from './ProjectImages.tsx'
 
 interface Props {
-  id: number;
-  title: string;
-  subtitle: string;
-  images: Image;
-  video: string | undefined;
-  github: string;
-  url: string;
-  technologies: Technologies[];
-  description: string;
-  extra?: string;
+  id: number
+  title: string
+  subtitle: string
+  images: Image
+  video: string | undefined
+  github: string
+  url: string
+  technologies: Technologies[]
+  description: string
+  extra?: string
 }
 
 const {
@@ -25,14 +25,13 @@ const {
   url,
   technologies,
   description,
-  extra
-} = Astro.props;
-
+  extra,
+} = Astro.props
 ---
 
 <div>
   <ProjectImages
-    client:only="react"
+    client:only='react'
     images={images}
     title={title}
     github={github}
@@ -43,9 +42,9 @@ const {
     video={video}
   />
   <div class='flex justify-between py-2'>
-    <div class='flex flex-col'>
-      <h1 class="mobile-xs:text-base">{title}</h1>
-      <h2  class="mobile-xs:text-sm">{subtitle}</h2>
+    <div class='flex flex-col px-2'>
+      <h1 class='mobile-xs:text-base'>{title}</h1>
+      <h2 class='mobile-xs:text-sm'>{subtitle}</h2>
     </div>
     <div class='flex justify-end'>
       <a
@@ -76,7 +75,7 @@ const {
       >
         <svg
           xmlns='http://www.w3.org/2000/svg'
-         class='w-7 h-7 mobile-xs:w-5 mobile-xs:h-5'
+          class='w-7 h-7 mobile-xs:w-5 mobile-xs:h-5'
           viewBox='0 0 24 24'
           stroke-width='2'
           stroke='currentColor'

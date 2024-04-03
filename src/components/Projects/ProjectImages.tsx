@@ -2,7 +2,7 @@ import { useRef } from 'react'
 import { getLangFromUrl, useTranslations } from '../../i18n/utils'
 const lang = getLangFromUrl(new URL(window.location.href))
 const t = useTranslations(lang)
-import ImageCarousel from '../ImageCarousel'
+import ImageCarousel from '../Carousel/ImageCarousel.tsx'
 import type { Image, Technologies } from '../../utils/utils.ts'
 
 interface Props {
@@ -42,13 +42,13 @@ const ProjectImages = ({
 
   return (
     <div>
-      <div className='flex flex-col items-center justify-center w-fit overflow-hidden cursor-pointer rounded-xl h-fit '>
+      <div className='flex flex-col items-center justify-center w-fit overflow-hidden cursor-pointer rounded-xl h-fit'>
         {images?.cover ? (
           <img
             src={images?.cover}
             alt={title}
             onClick={handleClick}
-            className='aspect-auto transition-transform duration-300 hover:scale-105 w-96 max-h-[285px] cursor-pointer'
+            className='aspect-auto transition-transform duration-300 hover:scale-105 w-96 max-h-[305px] cursor-pointer'
           />
         ) : (
           <img
@@ -61,17 +61,23 @@ const ProjectImages = ({
       </div>
       <dialog
         ref={dialogRef}
-        className='dark:text-white dark:bg-[#4e4e4e] bg-[#F5F5F5] w-[85%] desktop-xl:w-[80%] desktop-lg:w-[90%] desktop-lg:h-[80%] mobile-sm:h-[90%] h-[75%] rounded-md'
+        className='dark:text-white dark:bg-[#4e4e4e] bg-[#F5F5F5] w-[85%] desktop-xl:w-[80%] desktop-lg:w-[90%] desktop-lg:h-[65%] mobile-sm:h-[90%] desktop-xl:h-[75%] h-[75%] rounded-md tablet-md:h-[60%]'
       >
-        <div className='flex flex-row mobile-xs:flex-col mobile-sm:flex-col mobile-md:flex-col gap-4 px-4 bg-[#F5F5F5] dark:bg-[#4e4e4e63]'>
-          <div className='w-full sm:w-2/3 mobile-xs:h-44 mobile-sm:w-64 mobile-md:w-full mobile-sm:h-60 mobile-sm:mt-12 mt-5'>
+        <div
+          className='flex flex-row mobile-xs:flex-col mobile-sm:flex-col mobile-md:flex-col
+        tablet-md:flex-col gap-4 px-4 bg-[#F5F5F5] dark:bg-[#4e4e4e63]'
+        >
+          <div className='w-full sm:w-2/3 mobile-xs:h-44 mobile-sm:w-full mobile-md:w-full mobile-sm:h-60 mobile-sm:mt-8 mt-5 tablet-md:w-full'>
             <ImageCarousel images={images} title={title} video={video} />
           </div>
-          <div className='desktop-lg:w-1/2 mobile-sm:w-full mt-10 pb-1 desktop-lg:mt-12 desktop-xl:mt-14'>
-            <h1 className='text-4xl font-extrabold mobile-xs:text-xl'>
+          <div
+            className='desktop-lg:w-1/2 mobile-sm:w-full mt-5 pb-1 desktop-lg:mt-12 desktop-xl:mt-14
+          tablet-md:ml-6'
+          >
+            <h1 className='text-4xl font-extrabold mobile-xs:text-xl mobile-sm:text-2xl mobile-md:text-3xl'>
               {title}
             </h1>
-            <div className='dark:hover:bg-[#FFFFFF11] dark:text-[#a8a8a8] dark:hover:text-[#F3F3F3] bg-transparent p-[5px] text-[#535353] hover:text-[#252525] hover:bg-[#cccccc38] h-10 absolute desktop-lg:top-6 top-8 right-5 lg:p-2 rounded-md mobile-xs:top-0 mobile-xs:right-1'>
+            <div className='dark:hover:bg-[#FFFFFF11] dark:text-[#a8a8a8] dark:hover:text-[#F3F3F3] bg-transparent p-[5px] text-[#535353] hover:text-[#252525] hover:bg-[#cccccc38] h-10 absolute desktop-lg:top-6 top-8 right-5 lg:p-2 rounded-md mobile-xs:top-0 mobile-xs:right-1 mobile-md:top-5 mobile-md:right-3 mobile-sm:top-3 mobile-sm:right-2'>
               <button onClick={handleCloseModal}>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'

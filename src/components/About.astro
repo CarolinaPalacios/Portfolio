@@ -1,23 +1,32 @@
 ---
-import { getLangFromUrl, useTranslations } from '../i18n/utils';
-const lang = getLangFromUrl(Astro.url);
-const t = useTranslations(lang);
+import { getLangFromUrl, useTranslations } from '../i18n/utils'
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
 ---
 
-<section class='flex lg:flex-row flex-col h-full items-center desktop-lg:gap-16 desktop-lg:mt-10 tablet-md:pt-10 mobile-md:py-10 '>
-  <article class='flex flex-col items-center justify-center desktop-lg:w-1/2 tablet-md:w-1/2'>
+<section
+  class='flex lg:flex-row flex-col h-full items-center desktop-lg:gap-16 desktop-lg:mt-10 tablet-md:pt-10 mobile-md:py-10'
+>
+  <article
+    class='flex flex-col items-center justify-center desktop-lg:w-1/2 tablet-md:w-1/2'
+  >
     <div>
       <h1
         class='flex flex-initial font-extrabold desktop-lg:text-6xl self-start mobile-xs:text-2xl mobile-sm:text-3xl mobile-md:text-3xl tablet-md:text-4xl'
       >
         {t('About')}
       </h1>
-      <p class="text-[1rem] text-left py-5 desktop-lg:w-11/12 ">
+      <p class='text-[1rem] text-left py-5 desktop-lg:w-11/12'>
         {t('AboutSection')}
       </p>
     </div>
   </article>
-  <div class="items-center mobile-sm:w-[15rem] mobile-md:w-[28rem] tablet-md:w-[25rem] desktop-lg:w-1/2 desktop-lg:mt-5">
-    <img src="https://res.cloudinary.com/dr4c4eqnr/image/upload/v1697684519/phorkhrqaqrvnftisa6x.svg" alt="me" >
+  <div
+    class='items-center mobile-sm:w-[15rem] mobile-md:w-[28rem] tablet-md:w-[25rem] desktop-lg:w-1/2 desktop-lg:mt-5'
+  >
+    <img
+      src='https://res.cloudinary.com/dr4c4eqnr/image/upload/v1697684519/phorkhrqaqrvnftisa6x.svg'
+      alt='me'
+    />
   </div>
 </section>
