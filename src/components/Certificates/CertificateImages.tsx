@@ -46,7 +46,7 @@ const CertificateImages = ({
       </div>
       <dialog
         ref={dialogRef}
-        className='dark:text-white dark:bg-[#4e4e4e] bg-[#F5F5F5] w-[85%] desktop-xl:w-[55%] desktop-lg:w-[80%] desktop-lg:h-[50%] desktop-xl:h-[56%] mobile-sm:h-[80%] h-[75%] rounded-md tablet-md:h-[60%]'
+        className='dark:text-white dark:bg-[#4e4e4e] bg-[#F5F5F5] w-[85%] desktop-xl:w-[55%] desktop-lg:w-[80%] desktop-lg:h-[75%] desktop-xl:h-[56%] mobile-sm:h-[80%] h-[75%] rounded-md tablet-md:h-[60%]'
       >
         <div
           className='flex flex-row mobile-xs:flex-col mobile-sm:flex-col mobile-md:flex-col

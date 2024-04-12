@@ -727,7 +727,7 @@ export const certificates: Certificates[] = [
       {
         title: {
           en: 'Agile methodologies (SCRUM)',
-          es: 'Metodos agiles (SCRUM)',
+          es: 'Metodologías ágiles (SCRUM)',
         },
       },
     ],

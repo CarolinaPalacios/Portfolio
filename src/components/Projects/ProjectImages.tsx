@@ -55,13 +55,13 @@ const ProjectImages = ({
             src='https://res.cloudinary.com/dr4c4eqnr/image/upload/v1697684509/etrttzuquplxxgy8ncnv.svg'
             alt='default'
             onClick={handleClick}
-            className='aspect-auto transition-transform duration-300 mobile-xs:max-h-[192px] hover:scale-105 w-96 h-[285px] max-h-[285px] cursor-pointer'
+            className='aspect-auto transition-transform duration-300 mobile-xs:max-h-[192px] hover:scale-105 w-96 h-[285px] max-h-[305px] cursor-pointer desktop-lg:h-[230px] desktop-xl:h-[290px]'
           />
         )}
       </div>
       <dialog
         ref={dialogRef}
-        className='dark:text-white dark:bg-[#4e4e4e] bg-[#F5F5F5] w-[85%] desktop-xl:w-[80%] desktop-lg:w-[90%] desktop-lg:h-[65%] mobile-sm:h-[90%] desktop-xl:h-[75%] h-[75%] rounded-md tablet-md:h-[60%]'
+        className='dark:text-white dark:bg-[#4e4e4e] bg-[#F5F5F5] w-[85%] desktop-xl:w-[80%] desktop-lg:w-[90%] desktop-lg:h-[95%] mobile-sm:h-[90%] desktop-xl:h-[75%] h-[75%] rounded-md tablet-md:h-[60%]'
       >
         <div
           className='flex flex-row mobile-xs:flex-col mobile-sm:flex-col mobile-md:flex-col
